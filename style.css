@@ -6,13 +6,11 @@
   --cream: #f2efe8;
   --black: #111111;
 
-  /* NOWY CIEMNIEJSZY RÓŻ */
   --pink: #9f4565;
   --pink-dark: #7d334e;
   --pink-soft: #c97995;
 
-  --gray: #777777;
-  --line: #aaaaaa;
+  --red-bike: #cf2027;
 }
 
 
@@ -32,8 +30,11 @@ html {
 
 body {
   font-family: "DM Sans", Arial, sans-serif;
+
   background: var(--cream);
+
   color: #151515;
+
   overflow-x: hidden;
 }
 
@@ -58,14 +59,18 @@ a {
 
 .header {
   position: fixed;
+
   top: 0;
   left: 0;
+
   z-index: 1000;
 
   width: 100%;
 
   display: flex;
+
   justify-content: space-between;
+
   align-items: center;
 
   padding: 20px 5%;
@@ -75,33 +80,46 @@ a {
   background: rgba(10, 10, 10, 0.35);
 
   backdrop-filter: blur(14px);
+
   -webkit-backdrop-filter: blur(14px);
 }
 
+
 .logo {
   font-size: 25px;
+
   font-weight: 700;
+
   letter-spacing: -1px;
+
   text-decoration: none;
 }
+
 
 .logo span {
   color: var(--pink-soft);
 }
 
+
 .nav {
   display: flex;
+
   gap: 27px;
 }
 
+
 .nav a {
   font-size: 12px;
+
   letter-spacing: 1px;
+
   text-transform: uppercase;
+
   text-decoration: none;
 
   transition: opacity 0.2s ease;
 }
+
 
 .nav a:hover {
   opacity: 0.55;
@@ -116,32 +134,44 @@ a {
   padding: 115px 7%;
 }
 
+
 .section-heading {
   display: flex;
+
   align-items: center;
+
   gap: 22px;
 
   padding-bottom: 18px;
+
   margin-bottom: 70px;
 
   border-bottom: 1px solid #aaa;
 }
 
+
 .section-heading span,
 .section-number {
   font-size: 11px;
+
   opacity: 0.55;
 }
 
+
 .section-heading p {
   font-size: 12px;
+
   letter-spacing: 3px;
+
   text-transform: uppercase;
 }
 
+
 .mini-label {
   font-size: 10px;
+
   letter-spacing: 4px;
+
   text-transform: uppercase;
 }
 
@@ -156,6 +186,7 @@ a {
   min-height: 100vh;
 
   display: flex;
+
   align-items: flex-end;
 
   padding: 145px 7% 75px;
@@ -163,22 +194,28 @@ a {
   color: white;
 
   background-image:
+
     linear-gradient(
       90deg,
       rgba(0, 0, 0, 0.72),
       rgba(0, 0, 0, 0.22)
     ),
+
     url("OlaSamelczakportret.jpeg");
 
   background-size: cover;
+
   background-position: center 25%;
 }
 
+
 .hero-shade {
   position: absolute;
+
   inset: 0;
 
   background:
+
     linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.45),
@@ -186,19 +223,24 @@ a {
     );
 }
 
+
 .hero-content {
   position: relative;
+
   z-index: 2;
 
   max-width: 1000px;
 }
 
+
 .eyebrow {
   margin-bottom: 28px;
 
   font-size: 11px;
+
   letter-spacing: 4px;
 }
+
 
 .hero h1 {
   font-size: clamp(68px, 8vw, 135px);
@@ -210,12 +252,15 @@ a {
   font-weight: 600;
 }
 
+
 .hero h1 span {
   color: var(--pink-soft);
 
   font-family: "Playfair Display", serif;
+
   font-style: italic;
 }
+
 
 .hero-description {
   max-width: 510px;
@@ -223,17 +268,21 @@ a {
   margin-top: 36px;
 
   font-size: 18px;
+
   line-height: 1.6;
 }
 
+
 .hero-buttons {
   display: flex;
+
   flex-wrap: wrap;
 
   gap: 12px;
 
   margin-top: 32px;
 }
+
 
 .button {
   display: inline-block;
@@ -243,35 +292,40 @@ a {
   border-radius: 100px;
 
   font-size: 13px;
+
   font-weight: 600;
 
   text-decoration: none;
 
-  transition:
-    background 0.2s ease,
-    color 0.2s ease,
-    transform 0.2s ease;
+  transition: 0.2s;
 }
+
 
 .button:hover {
   transform: translateY(-2px);
 }
 
+
 .button-light {
   background: white;
+
   color: #111;
 }
+
 
 .button-light:hover {
   background: var(--pink-soft);
 }
 
+
 .button-outline {
   border: 1px solid white;
 }
 
+
 .button-outline:hover {
   background: white;
+
   color: #111;
 }
 
@@ -290,9 +344,11 @@ a {
   align-items: start;
 }
 
+
 .about-photo-wrap {
   overflow: hidden;
 }
+
 
 .about-photo {
   height: 760px;
@@ -302,11 +358,13 @@ a {
   object-position: center top;
 }
 
+
 .about-content .mini-label {
   margin-bottom: 28px;
 
   opacity: 0.55;
 }
+
 
 .about-content h2 {
   margin-bottom: 48px;
@@ -318,12 +376,13 @@ a {
   letter-spacing: -4px;
 }
 
+
 .about-content h2 em {
   color: var(--pink);
 
   font-family: "Playfair Display", serif;
-  font-weight: 600;
 }
+
 
 .about-content > p:not(.mini-label) {
   max-width: 650px;
@@ -331,12 +390,13 @@ a {
   margin-bottom: 22px;
 
   font-size: 17px;
+
   line-height: 1.75;
 }
 
 
 /* ===================================== */
-/* RÓŻOWA SEKCJA */
+/* STATEMENT */
 /* ===================================== */
 
 .statement {
@@ -347,12 +407,15 @@ a {
   color: white;
 }
 
+
 .statement > p {
   margin-bottom: 35px;
 
   font-size: 10px;
+
   letter-spacing: 4px;
 }
+
 
 .statement h2 {
   font-size: clamp(48px, 6vw, 95px);
@@ -361,6 +424,7 @@ a {
 
   letter-spacing: -4px;
 }
+
 
 .statement h2 em {
   font-family: "Playfair Display", serif;
@@ -379,9 +443,11 @@ a {
   color: white;
 }
 
+
 .section-heading-dark {
   border-color: #3b3b3b;
 }
+
 
 .theatre-header {
   display: grid;
@@ -395,11 +461,13 @@ a {
   margin-bottom: 70px;
 }
 
+
 .theatre-header .mini-label {
   margin-bottom: 24px;
 
   color: #999;
 }
+
 
 .theatre-header h2 {
   font-size: clamp(58px, 6.8vw, 105px);
@@ -409,20 +477,24 @@ a {
   letter-spacing: -4px;
 }
 
+
 .theatre-header h2 em {
   color: var(--pink-soft);
 
   font-family: "Playfair Display", serif;
 }
 
+
 .theatre-description {
   max-width: 470px;
 
   font-size: 17px;
+
   line-height: 1.7;
 
   color: #bbb;
 }
+
 
 .theatre-grid {
   display: grid;
@@ -430,8 +502,10 @@ a {
   grid-template-columns: repeat(3, 1fr);
 
   border-top: 1px solid #3b3b3b;
+
   border-left: 1px solid #3b3b3b;
 }
+
 
 .theatre-card {
   position: relative;
@@ -441,24 +515,27 @@ a {
   padding: 28px;
 
   display: flex;
+
   flex-direction: column;
+
   justify-content: space-between;
 
   border-right: 1px solid #3b3b3b;
+
   border-bottom: 1px solid #3b3b3b;
 
   color: white;
 
   text-decoration: none;
 
-  transition:
-    background 0.25s ease,
-    transform 0.25s ease;
+  transition: background 0.25s ease;
 }
+
 
 .theatre-card:hover {
   background: var(--pink);
 }
+
 
 .card-number {
   font-size: 10px;
@@ -466,9 +543,6 @@ a {
   color: #777;
 }
 
-.theatre-card:hover .card-number {
-  color: white;
-}
 
 .theatre-card h3 {
   max-width: 90%;
@@ -482,20 +556,25 @@ a {
   letter-spacing: -1.4px;
 }
 
+
 .theatre-card p {
   font-size: 13px;
 
   color: #999;
 }
 
-.theatre-card:hover p {
+
+.theatre-card:hover p,
+.theatre-card:hover .card-number {
   color: white;
 }
+
 
 .card-arrow {
   position: absolute;
 
   top: 25px;
+
   right: 25px;
 
   font-size: 20px;
@@ -512,6 +591,7 @@ a {
   background: var(--cream);
 }
 
+
 .video-heading {
   display: grid;
 
@@ -524,15 +604,18 @@ a {
   margin-bottom: 60px;
 }
 
+
 .video-heading .section-number {
   display: block;
 
   margin-bottom: 28px;
 }
 
+
 .video-label {
   margin-bottom: 20px;
 }
+
 
 .video-heading h2 {
   font-size: clamp(58px, 6.8vw, 105px);
@@ -542,15 +625,18 @@ a {
   letter-spacing: -4px;
 }
 
+
 .video-heading h2 em {
   color: var(--pink);
 
   font-family: "Playfair Display", serif;
 }
 
+
 .video-description {
   font-size: 17px;
 }
+
 
 .video-wrapper {
   position: relative;
@@ -564,14 +650,17 @@ a {
   background: black;
 }
 
+
 .video-wrapper iframe {
   position: absolute;
 
   inset: 0;
 
   width: 100%;
+
   height: 100%;
 }
+
 
 .text-link {
   display: inline-block;
@@ -583,6 +672,7 @@ a {
   border-bottom: 1px solid #111;
 
   font-size: 13px;
+
   font-weight: 600;
 
   text-decoration: none;
@@ -605,8 +695,10 @@ a {
   background: black;
 }
 
+
 .portrait-section > img {
   width: 100%;
+
   height: 100%;
 
   object-fit: cover;
@@ -614,13 +706,16 @@ a {
   object-position: center 25%;
 }
 
+
 .portrait-section::after {
   content: "";
 
   position: absolute;
+
   inset: 0;
 
   background:
+
     linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.62),
@@ -628,10 +723,12 @@ a {
     );
 }
 
+
 .portrait-text {
   position: absolute;
 
   left: 7%;
+
   bottom: 8%;
 
   z-index: 2;
@@ -639,12 +736,15 @@ a {
   color: white;
 }
 
+
 .portrait-text p {
   margin-bottom: 10px;
 
   font-size: 10px;
+
   letter-spacing: 5px;
 }
+
 
 .portrait-text h2 {
   font-size: clamp(65px, 8vw, 135px);
@@ -653,6 +753,7 @@ a {
 
   letter-spacing: -5px;
 }
+
 
 .portrait-text h2 span {
   color: var(--pink-soft);
@@ -671,6 +772,7 @@ a {
   color: white;
 }
 
+
 .gallery-heading {
   display: grid;
 
@@ -681,17 +783,20 @@ a {
   margin-bottom: 65px;
 }
 
+
 .gallery-heading > span {
   font-size: 11px;
 
   color: #777;
 }
 
+
 .gallery-heading .mini-label {
   margin-bottom: 20px;
 
   color: #888;
 }
+
 
 .gallery-heading h2 {
   font-size: clamp(58px, 7vw, 110px);
@@ -701,9 +806,11 @@ a {
   letter-spacing: -4px;
 }
 
+
 .gallery-heading h2 span {
   color: var(--pink-soft);
 }
+
 
 .gallery-grid {
   display: grid;
@@ -715,14 +822,17 @@ a {
   gap: 16px;
 }
 
+
 .gallery-item {
   overflow: hidden;
 
   background: #222;
 }
 
+
 .gallery-item img {
   width: 100%;
+
   height: 100%;
 
   object-fit: cover;
@@ -730,44 +840,37 @@ a {
   transition: transform 0.6s ease;
 }
 
+
 .gallery-item:hover img {
   transform: scale(1.03);
 }
 
+
 .gallery-item-1 {
   grid-column: 1 / span 7;
+
   grid-row: 1 / span 8;
 }
 
+
 .gallery-item-2 {
   grid-column: 8 / span 5;
+
   grid-row: 1 / span 5;
 }
 
+
 .gallery-item-3 {
   grid-column: 8 / span 5;
+
   grid-row: 6 / span 6;
 }
 
+
 .gallery-item-4 {
   grid-column: 1 / span 7;
+
   grid-row: 9 / span 7;
-}
-
-.gallery-item-1 img {
-  object-position: center;
-}
-
-.gallery-item-2 img {
-  object-position: center 20%;
-}
-
-.gallery-item-3 img {
-  object-position: center;
-}
-
-.gallery-item-4 img {
-  object-position: center 30%;
 }
 
 
@@ -787,6 +890,7 @@ a {
   margin-bottom: 70px;
 }
 
+
 .film-header h2 {
   font-size: clamp(58px, 6.8vw, 105px);
 
@@ -795,22 +899,27 @@ a {
   letter-spacing: -4px;
 }
 
+
 .film-header h2 em {
   color: var(--pink);
 
   font-family: "Playfair Display", serif;
 }
 
+
 .film-header > p {
   max-width: 470px;
 
   font-size: 17px;
+
   line-height: 1.7;
 }
+
 
 .film-list {
   border-top: 1px solid #aaa;
 }
+
 
 .film-row {
   display: grid;
@@ -824,17 +933,18 @@ a {
   border-bottom: 1px solid #aaa;
 }
 
+
 .film-row > span {
   font-size: 12px;
 
   color: #777;
 }
 
+
 .film-row h3 {
   font-size: clamp(27px, 3vw, 45px);
-
-  letter-spacing: -1.4px;
 }
+
 
 .film-row p {
   text-align: right;
@@ -863,19 +973,20 @@ a {
   color: white;
 }
 
-.music-number {
-  padding-top: 5px;
 
+.music-number {
   font-size: 11px;
 
   color: #777;
 }
+
 
 .music-label {
   margin-bottom: 28px;
 
   color: #888;
 }
+
 
 .music-content h2 {
   margin-bottom: 55px;
@@ -887,9 +998,11 @@ a {
   letter-spacing: -5px;
 }
 
+
 .music-content h2 span {
   color: var(--pink-soft);
 }
+
 
 .music-lead {
   max-width: 850px;
@@ -897,9 +1010,8 @@ a {
   font-size: clamp(28px, 3vw, 45px);
 
   line-height: 1.2;
-
-  letter-spacing: -1.4px;
 }
+
 
 .music-text {
   max-width: 650px;
@@ -907,10 +1019,12 @@ a {
   margin-top: 30px;
 
   font-size: 16px;
+
   line-height: 1.75;
 
   color: #bbb;
 }
+
 
 .music-members {
   max-width: 760px;
@@ -919,6 +1033,7 @@ a {
 
   border-top: 1px solid #444;
 }
+
 
 .music-members span {
   display: block;
@@ -932,10 +1047,9 @@ a {
   color: #aaa;
 }
 
+
 .spotify-button {
   display: inline-block;
-
-  width: fit-content;
 
   margin-top: 40px;
 
@@ -948,19 +1062,10 @@ a {
   color: #111;
 
   font-size: 13px;
+
   font-weight: 700;
 
   text-decoration: none;
-
-  transition:
-    transform 0.2s ease,
-    background 0.2s ease;
-}
-
-.spotify-button:hover {
-  transform: translateY(-2px);
-
-  background: white;
 }
 
 
@@ -984,17 +1089,16 @@ a {
   color: white;
 }
 
+
 .poetry-number {
-  padding-top: 5px;
-
   font-size: 11px;
-
-  opacity: 0.7;
 }
+
 
 .poetry-label {
   margin-bottom: 32px;
 }
+
 
 .poetry h2 {
   margin-bottom: 60px;
@@ -1004,10 +1108,10 @@ a {
   font-size: clamp(85px, 11vw, 175px);
 
   font-style: italic;
-  font-weight: 600;
 
   line-height: 0.78;
 }
+
 
 .poetry-big {
   max-width: 800px;
@@ -1015,9 +1119,8 @@ a {
   font-size: clamp(28px, 3.2vw, 48px);
 
   line-height: 1.2;
-
-  letter-spacing: -1.4px;
 }
+
 
 .poetry-text {
   max-width: 570px;
@@ -1025,13 +1128,13 @@ a {
   margin-top: 30px;
 
   font-size: 16px;
+
   line-height: 1.7;
 }
 
+
 .book-button {
   display: inline-block;
-
-  width: fit-content;
 
   margin-top: 38px;
 
@@ -1044,22 +1147,10 @@ a {
   color: #111;
 
   font-size: 13px;
+
   font-weight: 700;
 
   text-decoration: none;
-
-  transition:
-    transform 0.2s ease,
-    background 0.2s ease,
-    color 0.2s ease;
-}
-
-.book-button:hover {
-  transform: translateY(-2px);
-
-  background: var(--pink-dark);
-
-  color: white;
 }
 
 
@@ -1073,7 +1164,9 @@ a {
   padding: 110px 7% 70px;
 
   display: flex;
+
   flex-direction: column;
+
   justify-content: space-between;
 
   background: #111;
@@ -1081,9 +1174,11 @@ a {
   color: white;
 }
 
+
 .contact > .mini-label {
   color: #777;
 }
+
 
 .contact h2 {
   margin: 75px 0;
@@ -1095,11 +1190,13 @@ a {
   letter-spacing: -5px;
 }
 
+
 .contact h2 em {
   color: var(--pink-soft);
 
   font-family: "Playfair Display", serif;
 }
+
 
 .contact-grid {
   display: grid;
@@ -1113,12 +1210,15 @@ a {
   border-top: 1px solid #333;
 }
 
+
 .contact-item {
   display: flex;
+
   flex-direction: column;
 
   gap: 12px;
 }
+
 
 .contact-item > span {
   font-size: 9px;
@@ -1128,19 +1228,20 @@ a {
   color: #777;
 }
 
+
 .contact-item > a {
   width: fit-content;
 
   font-size: clamp(18px, 1.8vw, 25px);
 
   text-decoration: none;
-
-  transition: color 0.2s ease;
 }
+
 
 .contact-item > a:hover {
   color: var(--pink-soft);
 }
+
 
 .instagram-link {
   display: inline-flex;
@@ -1150,18 +1251,21 @@ a {
   gap: 12px;
 }
 
+
 .instagram-icon {
   width: 34px;
+
   height: 34px;
 }
 
 
 /* ===================================== */
-/* STOPKA */
+/* FOOTER */
 /* ===================================== */
 
 footer {
   display: flex;
+
   justify-content: space-between;
 
   gap: 25px;
@@ -1177,16 +1281,391 @@ footer {
   font-size: 11px;
 }
 
+
 .footer-links {
   display: flex;
 
   gap: 20px;
 }
 
+
 footer a {
   color: #aaa;
 
   text-decoration: none;
+}
+
+
+/* ===================================== */
+/* ŚMIESZNA ROWERZYSTKA */
+/* ===================================== */
+
+.bike-world {
+  position: fixed;
+
+  right: 0;
+
+  bottom: 45px;
+
+  width: 310px;
+
+  height: 150px;
+
+  z-index: 9999;
+
+  pointer-events: none;
+
+  overflow: visible;
+}
+
+
+/* CAŁA POSTAĆ JEDZIE */
+
+.bike-rider {
+  position: absolute;
+
+  right: -80px;
+
+  bottom: 0;
+
+  width: 150px;
+
+  animation:
+    funnyRide 7s ease-in-out infinite alternate;
+}
+
+
+/* MAŁE PODSKAKIWANIE */
+
+.bike-svg {
+  overflow: visible;
+
+  animation:
+    tinyBounce 0.45s ease-in-out infinite alternate;
+}
+
+
+/* KOŁA */
+
+.wheel {
+  transform-box: fill-box;
+
+  transform-origin: center;
+
+  animation:
+    wheelSpin 0.7s linear infinite;
+}
+
+
+.wheel line {
+  stroke: white;
+
+  stroke-width: 2;
+}
+
+
+/* CZERWONY ROWER */
+
+.red-bike line {
+  stroke: var(--red-bike);
+
+  stroke-width: 6;
+
+  stroke-linecap: round;
+
+  stroke-linejoin: round;
+}
+
+
+.seat line {
+  stroke: #222;
+
+  stroke-width: 6;
+
+  stroke-linecap: round;
+}
+
+
+/* CIAŁO */
+
+.face {
+  fill: #f1c5ac;
+
+  stroke: #222;
+
+  stroke-width: 2;
+}
+
+
+.body-line {
+  stroke: white;
+
+  stroke-width: 6;
+
+  stroke-linecap: round;
+}
+
+
+/* WŁOSY */
+
+.hair {
+  fill: none;
+
+  stroke: #542b23;
+
+  stroke-width: 7;
+
+  stroke-linecap: round;
+
+  animation:
+    hairWave 0.6s ease-in-out infinite alternate;
+}
+
+
+/* SZALIK */
+
+.scarf {
+  fill: none;
+
+  stroke: var(--pink-soft);
+
+  stroke-width: 7;
+
+  stroke-linecap: round;
+
+  animation:
+    scarfWave 0.45s ease-in-out infinite alternate;
+}
+
+
+/* NOGI PEDAŁUJĄ */
+
+.leg-one {
+  transform-box: fill-box;
+
+  transform-origin: top center;
+
+  animation:
+    pedalOne 0.7s ease-in-out infinite alternate;
+}
+
+
+.leg-two {
+  transform-box: fill-box;
+
+  transform-origin: top center;
+
+  animation:
+    pedalTwo 0.7s ease-in-out infinite alternate;
+}
+
+
+/* DYMek */
+
+.bike-bubble {
+  position: absolute;
+
+  top: -15px;
+
+  right: 110px;
+
+  padding: 7px 12px;
+
+  border-radius: 100px;
+
+  background: white;
+
+  color: #111;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  transform: rotate(-8deg);
+
+  opacity: 0;
+
+  animation:
+    bubblePop 7s ease-in-out infinite;
+}
+
+
+.bike-bubble::after {
+  content: "";
+
+  position: absolute;
+
+  right: 9px;
+
+  bottom: -6px;
+
+  width: 0;
+
+  height: 0;
+
+  border-left: 6px solid transparent;
+
+  border-right: 6px solid transparent;
+
+  border-top: 8px solid white;
+
+  transform: rotate(-20deg);
+}
+
+
+/* ===================================== */
+/* ANIMACJE ROWERU */
+/* ===================================== */
+
+@keyframes funnyRide {
+
+  0% {
+    transform:
+      translateX(80px)
+      rotate(0deg);
+  }
+
+  18% {
+    transform:
+      translateX(-30px)
+      rotate(-2deg);
+  }
+
+  45% {
+    transform:
+      translateX(-90px)
+      rotate(2deg);
+  }
+
+  70% {
+    transform:
+      translateX(-150px)
+      rotate(-1deg);
+  }
+
+  100% {
+    transform:
+      translateX(-200px)
+      rotate(1deg);
+  }
+
+}
+
+
+@keyframes tinyBounce {
+
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-5px);
+  }
+
+}
+
+
+@keyframes wheelSpin {
+
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+
+}
+
+
+@keyframes hairWave {
+
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-8deg);
+  }
+
+}
+
+
+@keyframes scarfWave {
+
+  from {
+    transform:
+      translateX(0)
+      rotate(0deg);
+  }
+
+  to {
+    transform:
+      translateX(-7px)
+      rotate(-6deg);
+  }
+
+}
+
+
+@keyframes pedalOne {
+
+  from {
+    transform: rotate(-8deg);
+  }
+
+  to {
+    transform: rotate(15deg);
+  }
+
+}
+
+
+@keyframes pedalTwo {
+
+  from {
+    transform: rotate(14deg);
+  }
+
+  to {
+    transform: rotate(-10deg);
+  }
+
+}
+
+
+@keyframes bubblePop {
+
+  0%,
+  30% {
+    opacity: 0;
+
+    transform:
+      translateY(8px)
+      rotate(-8deg)
+      scale(0.7);
+  }
+
+  38%,
+  55% {
+    opacity: 1;
+
+    transform:
+      translateY(0)
+      rotate(-8deg)
+      scale(1);
+  }
+
+  65%,
+  100% {
+    opacity: 0;
+
+    transform:
+      translateY(-8px)
+      rotate(-8deg)
+      scale(0.8);
+  }
+
 }
 
 
@@ -1248,8 +1727,6 @@ footer a {
   }
 
 
-  /* HERO */
-
   .hero {
     min-height: 100svh;
 
@@ -1258,31 +1735,23 @@ footer a {
     background-position: 60% center;
   }
 
+
   .hero h1 {
     font-size: clamp(56px, 16vw, 85px);
 
     letter-spacing: -3px;
   }
 
-  .hero-description {
-    max-width: 330px;
 
+  .hero-description {
     font-size: 15px;
   }
 
-
-  /* OGÓLNE */
 
   .section {
     padding: 80px 6%;
   }
 
-  .section-heading {
-    margin-bottom: 50px;
-  }
-
-
-  /* ABOUT */
 
   .about-grid {
     grid-template-columns: 1fr;
@@ -1290,124 +1759,91 @@ footer a {
     gap: 50px;
   }
 
+
   .about-photo {
     height: 540px;
   }
 
+
   .about-content h2 {
     font-size: 52px;
-
-    letter-spacing: -3px;
   }
 
-  .about-content > p:not(.mini-label) {
-    font-size: 15px;
-  }
-
-
-  /* STATEMENT */
 
   .statement {
     padding: 80px 6%;
   }
 
+
   .statement h2 {
     font-size: 48px;
-
-    letter-spacing: -3px;
   }
 
-
-  /* TEATR */
 
   .theatre-section {
     padding: 80px 6%;
   }
 
+
   .theatre-header {
     grid-template-columns: 1fr;
-
-    gap: 38px;
   }
+
 
   .theatre-header h2 {
     font-size: 56px;
-
-    letter-spacing: -3px;
   }
 
-  .theatre-description {
-    font-size: 15px;
-  }
 
   .theatre-grid {
     grid-template-columns: 1fr;
   }
 
+
   .theatre-card {
     min-height: 185px;
   }
+
 
   .theatre-card h3 {
     font-size: 30px;
   }
 
 
-  /* VIDEO */
-
   .video-section {
     padding: 80px 6%;
   }
 
+
   .video-heading {
     grid-template-columns: 1fr;
-
-    gap: 30px;
   }
+
 
   .video-heading h2 {
     font-size: 56px;
-
-    letter-spacing: -3px;
   }
 
-
-  /* PORTRET */
 
   .portrait-section {
     height: 75vh;
-
-    min-height: 570px;
   }
 
-  .portrait-section > img {
-    object-position: center top;
-  }
 
   .portrait-text h2 {
     font-size: 57px;
-
-    letter-spacing: -3px;
   }
 
-
-  /* GALERIA */
 
   .gallery-section {
     padding: 80px 6%;
   }
 
-  .gallery-heading {
-    grid-template-columns: 40px 1fr;
-
-    margin-bottom: 50px;
-  }
 
   .gallery-heading h2 {
     font-size: 58px;
-
-    letter-spacing: -3px;
   }
+
 
   .gallery-grid {
     display: grid;
@@ -1419,13 +1855,16 @@ footer a {
     gap: 9px;
   }
 
+
   .gallery-item-1,
   .gallery-item-2,
   .gallery-item-3,
   .gallery-item-4 {
     grid-column: auto;
+
     grid-row: auto;
   }
+
 
   .gallery-item-1 {
     grid-column: 1 / -1;
@@ -1433,10 +1872,12 @@ footer a {
     height: 530px;
   }
 
+
   .gallery-item-2,
   .gallery-item-3 {
     height: 330px;
   }
+
 
   .gallery-item-4 {
     grid-column: 1 / -1;
@@ -1445,33 +1886,20 @@ footer a {
   }
 
 
-  /* FILM */
-
   .film-header {
     grid-template-columns: 1fr;
-
-    gap: 32px;
   }
+
 
   .film-header h2 {
     font-size: 56px;
-
-    letter-spacing: -3px;
   }
 
-  .film-header > p {
-    font-size: 15px;
-  }
 
   .film-row {
     grid-template-columns: 55px 1fr;
-
-    gap: 9px;
   }
 
-  .film-row h3 {
-    font-size: 27px;
-  }
 
   .film-row p {
     grid-column: 2;
@@ -1480,30 +1908,17 @@ footer a {
   }
 
 
-  /* MUZYKA */
-
   .music-section {
     grid-template-columns: 1fr;
 
     padding: 80px 6%;
   }
 
-  .music-number {
-    margin-bottom: 12px;
-  }
 
   .music-content h2 {
     font-size: 63px;
-
-    letter-spacing: -3px;
   }
 
-  .music-lead {
-    font-size: 26px;
-  }
-
-
-  /* DOM */
 
   .poetry {
     grid-template-columns: 1fr;
@@ -1511,39 +1926,26 @@ footer a {
     padding: 80px 6%;
   }
 
+
   .poetry h2 {
     font-size: 92px;
   }
 
-  .poetry-big {
-    font-size: 27px;
-  }
-
-
-  /* KONTAKT */
 
   .contact {
-    min-height: 72vh;
-
     padding: 80px 6% 55px;
   }
 
+
   .contact h2 {
-    margin: 65px 0;
-
     font-size: 63px;
-
-    letter-spacing: -3px;
   }
+
 
   .contact-grid {
     grid-template-columns: 1fr;
-
-    gap: 28px;
   }
 
-
-  /* STOPKA */
 
   footer {
     flex-direction: column;
@@ -1551,8 +1953,34 @@ footer a {
     padding: 24px 6%;
   }
 
-  .footer-links {
-    flex-wrap: wrap;
+
+  /* ROWER NA TELEFONIE */
+
+  .bike-world {
+    right: -15px;
+
+    bottom: 25px;
+
+    width: 220px;
+
+    height: 110px;
+
+    transform: scale(0.75);
+
+    transform-origin: right bottom;
+  }
+
+}
+
+
+/* ===================================== */
+/* DOSTĘPNOŚĆ */
+/* ===================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .bike-world {
+    display: none;
   }
 
 }
