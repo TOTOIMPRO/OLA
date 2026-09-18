@@ -14,14 +14,18 @@ html {
 
 body {
   font-family: "DM Sans", sans-serif;
+
   background: #f1eee7;
+
   color: #131313;
+
   overflow-x: hidden;
 }
 
 img {
   display: block;
-  max-width: 100%;
+
+  width: 100%;
 }
 
 a {
@@ -35,7 +39,9 @@ a {
 
 .header {
   position: fixed;
+
   top: 0;
+
   left: 0;
 
   width: 100%;
@@ -43,21 +49,26 @@ a {
   padding: 22px 5%;
 
   display: flex;
+
   justify-content: space-between;
+
   align-items: center;
 
   z-index: 1000;
 
   color: white;
 
-  background: rgba(15, 15, 15, 0.25);
+  background: rgba(15, 15, 15, 0.28);
 
   backdrop-filter: blur(12px);
+
   -webkit-backdrop-filter: blur(12px);
 }
 
+
 .logo {
   font-size: 27px;
+
   font-weight: 700;
 
   text-decoration: none;
@@ -65,17 +76,21 @@ a {
   letter-spacing: -1px;
 }
 
+
 .logo span {
   color: #e987a4;
 }
 
+
 .nav {
   display: flex;
-  gap: 32px;
+
+  gap: 25px;
 }
 
+
 .nav a {
-  font-size: 13px;
+  font-size: 12px;
 
   text-decoration: none;
 
@@ -85,6 +100,7 @@ a {
 
   transition: opacity 0.2s ease;
 }
+
 
 .nav a:hover {
   opacity: 0.55;
@@ -103,17 +119,20 @@ a {
   position: relative;
 
   display: flex;
+
   align-items: flex-end;
 
   color: white;
 
   background-image:
+
     linear-gradient(
       90deg,
       rgba(0, 0, 0, 0.72) 0%,
       rgba(0, 0, 0, 0.25) 55%,
       rgba(0, 0, 0, 0.08) 100%
     ),
+
     url("OlaSamelczakportret.jpeg");
 
   background-size: cover;
@@ -121,17 +140,21 @@ a {
   background-position: center 25%;
 }
 
+
 .hero-overlay {
   position: absolute;
+
   inset: 0;
 
   background:
+
     linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.45),
       transparent 50%
     );
 }
+
 
 .hero-content {
   position: relative;
@@ -141,6 +164,7 @@ a {
   max-width: 1100px;
 }
 
+
 .eyebrow {
   font-size: 12px;
 
@@ -148,6 +172,7 @@ a {
 
   margin-bottom: 30px;
 }
+
 
 .hero h1 {
   font-size: clamp(68px, 10.5vw, 170px);
@@ -159,6 +184,7 @@ a {
   font-weight: 600;
 }
 
+
 .hero h1 span {
   font-family: "Playfair Display", serif;
 
@@ -168,6 +194,7 @@ a {
 
   color: #efafc1;
 }
+
 
 .hero-description {
   margin-top: 40px;
@@ -179,13 +206,17 @@ a {
   line-height: 1.55;
 }
 
+
 .hero-buttons {
   display: flex;
+
+  flex-wrap: wrap;
 
   gap: 12px;
 
   margin-top: 32px;
 }
+
 
 .button {
   padding: 14px 25px;
@@ -198,15 +229,14 @@ a {
 
   font-weight: 600;
 
-  transition:
-    background 0.25s ease,
-    color 0.25s ease,
-    transform 0.25s ease;
+  transition: 0.25s;
 }
+
 
 .button:hover {
   transform: translateY(-2px);
 }
+
 
 .button-light {
   background: white;
@@ -214,9 +244,11 @@ a {
   color: #111;
 }
 
+
 .button-light:hover {
   background: #efafc1;
 }
+
 
 .button-outline {
   border: 1px solid rgba(255, 255, 255, 0.8);
@@ -224,16 +256,19 @@ a {
   color: white;
 }
 
+
 .button-outline:hover {
   background: white;
 
   color: #111;
 }
 
+
 .scroll {
   position: absolute;
 
   right: 5%;
+
   bottom: 45px;
 
   z-index: 2;
@@ -256,6 +291,7 @@ a {
   padding: 120px 7%;
 }
 
+
 .section-heading {
   padding-bottom: 20px;
 
@@ -270,11 +306,14 @@ a {
   align-items: center;
 }
 
-.section-heading span {
+
+.section-heading span,
+.section-number {
   font-size: 12px;
 
   opacity: 0.5;
 }
+
 
 .section-heading p {
   font-size: 13px;
@@ -286,7 +325,7 @@ a {
 
 
 /* ============================= */
-/* O MNIE */
+/* ABOUT */
 /* ============================= */
 
 .about-grid {
@@ -299,9 +338,6 @@ a {
   align-items: start;
 }
 
-.about-photo-wrapper {
-  position: relative;
-}
 
 .about-photo {
   width: 100%;
@@ -313,6 +349,7 @@ a {
   object-position: center top;
 }
 
+
 .small-heading {
   font-size: 11px;
 
@@ -322,6 +359,7 @@ a {
 
   opacity: 0.5;
 }
+
 
 .about-content h2 {
   font-size: clamp(60px, 7.5vw, 115px);
@@ -333,6 +371,7 @@ a {
   margin-bottom: 55px;
 }
 
+
 .about-content h2 em {
   font-family: "Playfair Display", serif;
 
@@ -340,6 +379,7 @@ a {
 
   color: #cf6081;
 }
+
 
 .about-content > p:not(.small-heading) {
   font-size: 18px;
@@ -353,7 +393,7 @@ a {
 
 
 /* ============================= */
-/* HASŁO */
+/* STATEMENT */
 /* ============================= */
 
 .statement {
@@ -363,6 +403,7 @@ a {
 
   color: white;
 }
+
 
 .statement > p {
   font-size: 11px;
@@ -374,6 +415,7 @@ a {
   margin-bottom: 40px;
 }
 
+
 .statement h2 {
   font-size: clamp(55px, 8vw, 125px);
 
@@ -381,6 +423,7 @@ a {
 
   letter-spacing: -5px;
 }
+
 
 .statement h2 em {
   font-family: "Playfair Display", serif;
@@ -399,9 +442,11 @@ a {
   color: white;
 }
 
+
 .light-heading {
   border-color: #444;
 }
+
 
 .theatre-intro {
   display: grid;
@@ -415,6 +460,7 @@ a {
   margin-bottom: 100px;
 }
 
+
 .theatre-intro h2 {
   font-size: clamp(65px, 9vw, 140px);
 
@@ -423,6 +469,7 @@ a {
   letter-spacing: -6px;
 }
 
+
 .theatre-intro h2 em {
   color: #efafc1;
 
@@ -430,6 +477,7 @@ a {
 
   font-weight: 600;
 }
+
 
 .theatre-intro p {
   max-width: 500px;
@@ -441,9 +489,11 @@ a {
   color: #c8c8c8;
 }
 
+
 .projects {
   border-top: 1px solid #444;
 }
+
 
 .project {
   min-height: 190px;
@@ -458,10 +508,13 @@ a {
 
   align-items: center;
 
-  transition:
-    padding 0.3s ease,
-    background 0.3s ease;
+  color: white;
+
+  text-decoration: none;
+
+  transition: 0.3s;
 }
+
 
 .project:hover {
   padding-left: 30px;
@@ -469,11 +522,13 @@ a {
   background: #1b1b1b;
 }
 
+
 .project > span {
   font-size: 12px;
 
   color: #777;
 }
+
 
 .project h3 {
   font-size: clamp(32px, 4vw, 65px);
@@ -483,6 +538,7 @@ a {
   margin-bottom: 8px;
 }
 
+
 .project p {
   font-size: 14px;
 
@@ -491,7 +547,108 @@ a {
 
 
 /* ============================= */
-/* DUŻY PORTRET */
+/* VIDEO / WIZYTÓWKA */
+/* ============================= */
+
+.video-section {
+  background: #f1eee7;
+
+  padding: 120px 7%;
+}
+
+
+.video-heading {
+  display: grid;
+
+  grid-template-columns: 1.3fr 0.7fr;
+
+  gap: 8vw;
+
+  align-items: end;
+
+  margin-bottom: 70px;
+}
+
+
+.video-eyebrow {
+  margin-top: 25px;
+
+  margin-bottom: 20px;
+
+  font-size: 11px;
+
+  letter-spacing: 4px;
+}
+
+
+.video-heading h2 {
+  font-size: clamp(65px, 9vw, 140px);
+
+  line-height: 0.82;
+
+  letter-spacing: -6px;
+}
+
+
+.video-heading h2 em {
+  font-family: "Playfair Display", serif;
+
+  color: #cf6081;
+}
+
+
+.video-description {
+  font-size: 18px;
+
+  line-height: 1.6;
+
+  max-width: 350px;
+}
+
+
+.video-wrapper {
+  width: 100%;
+
+  position: relative;
+
+  aspect-ratio: 16 / 9;
+
+  background: black;
+
+  overflow: hidden;
+}
+
+
+.video-wrapper iframe {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+
+  height: 100%;
+}
+
+
+.youtube-link {
+  display: inline-block;
+
+  margin-top: 25px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  text-decoration: none;
+
+  border-bottom: 1px solid #111;
+
+  padding-bottom: 3px;
+}
+
+
+/* ============================= */
+/* PORTRET */
 /* ============================= */
 
 .portrait-section {
@@ -506,6 +663,7 @@ a {
   background: black;
 }
 
+
 .portrait-section img {
   width: 100%;
 
@@ -518,6 +676,7 @@ a {
   opacity: 0.92;
 }
 
+
 .portrait-section::after {
   content: "";
 
@@ -526,12 +685,14 @@ a {
   inset: 0;
 
   background:
+
     linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.65),
       rgba(0, 0, 0, 0.05)
     );
 }
+
 
 .portrait-text {
   position: absolute;
@@ -545,6 +706,7 @@ a {
   color: white;
 }
 
+
 .portrait-text p {
   font-size: 11px;
 
@@ -552,6 +714,7 @@ a {
 
   margin-bottom: 10px;
 }
+
 
 .portrait-text h2 {
   font-size: clamp(70px, 12vw, 190px);
@@ -561,8 +724,91 @@ a {
   line-height: 0.8;
 }
 
+
 .portrait-text h2 span {
   color: #efafc1;
+}
+
+
+/* ============================= */
+/* GALERIA */
+/* ============================= */
+
+.gallery-section {
+  padding: 120px 7%;
+
+  background: #111;
+
+  color: white;
+}
+
+
+.gallery-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-end;
+
+  margin-bottom: 75px;
+}
+
+
+.gallery-header h2 {
+  font-size: clamp(65px, 10vw, 150px);
+
+  letter-spacing: -6px;
+
+  line-height: 0.8;
+}
+
+
+.gallery-header h2 span {
+  color: #efafc1;
+}
+
+
+.gallery-grid {
+  display: grid;
+
+  grid-template-columns: 1.25fr 0.75fr;
+
+  gap: 18px;
+}
+
+
+.gallery-photo {
+  height: 520px;
+
+  overflow: hidden;
+}
+
+
+.gallery-photo img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.7s ease;
+}
+
+
+.gallery-photo:hover img {
+  transform: scale(1.025);
+}
+
+
+.gallery-large {
+  height: 760px;
+}
+
+
+.gallery-wide {
+  grid-column: 1 / -1;
+
+  height: 650px;
 }
 
 
@@ -582,6 +828,7 @@ a {
   margin-bottom: 100px;
 }
 
+
 .film-header h2 {
   font-size: clamp(65px, 9vw, 135px);
 
@@ -590,13 +837,13 @@ a {
   letter-spacing: -6px;
 }
 
+
 .film-header h2 em {
   font-family: "Playfair Display", serif;
 
   color: #cf6081;
-
-  font-weight: 600;
 }
+
 
 .film-header > p {
   max-width: 480px;
@@ -606,9 +853,11 @@ a {
   line-height: 1.7;
 }
 
+
 .film-list {
   border-top: 1px solid #aaa;
 }
+
 
 .film-row {
   padding: 35px 0;
@@ -621,12 +870,14 @@ a {
 
   border-bottom: 1px solid #aaa;
 
-  transition: padding 0.25s ease;
+  transition: 0.25s;
 }
+
 
 .film-row:hover {
   padding-left: 20px;
 }
+
 
 .year {
   font-size: 13px;
@@ -634,11 +885,13 @@ a {
   color: #777;
 }
 
+
 .film-row h3 {
   font-size: clamp(28px, 4vw, 54px);
 
   letter-spacing: -2px;
 }
+
 
 .role {
   text-align: right;
@@ -646,6 +899,148 @@ a {
   font-size: 14px;
 
   color: #666;
+}
+
+
+/* ============================= */
+/* WIECZORNIK */
+/* ============================= */
+
+.music-section {
+  padding: 120px 7%;
+
+  background: #171717;
+
+  color: white;
+
+  display: grid;
+
+  grid-template-columns: 100px 1fr;
+
+  gap: 5vw;
+}
+
+
+.music-number {
+  padding-top: 9px;
+
+  font-size: 12px;
+
+  color: #777;
+}
+
+
+.music-eyebrow {
+  font-size: 11px;
+
+  letter-spacing: 4px;
+
+  margin-bottom: 35px;
+
+  color: #aaa;
+}
+
+
+.music-content h2 {
+  font-size: clamp(80px, 13vw, 190px);
+
+  line-height: 0.8;
+
+  letter-spacing: -7px;
+
+  margin-bottom: 70px;
+}
+
+
+.music-content h2 span {
+  color: #efafc1;
+}
+
+
+.music-lead {
+  max-width: 900px;
+
+  font-size: clamp(25px, 3.5vw, 48px);
+
+  line-height: 1.18;
+
+  letter-spacing: -1.5px;
+}
+
+
+.music-text {
+  margin-top: 35px;
+
+  max-width: 650px;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+
+  color: #c2c2c2;
+}
+
+
+.music-members {
+  margin-top: 50px;
+
+  max-width: 800px;
+
+  border-top: 1px solid #444;
+}
+
+
+.music-members span {
+  display: block;
+
+  padding: 13px 0;
+
+  border-bottom: 1px solid #333;
+
+  color: #aaa;
+
+  font-size: 14px;
+}
+
+
+.spotify-button {
+  width: fit-content;
+
+  margin-top: 45px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 15px 24px;
+
+  background: #efafc1;
+
+  color: #111;
+
+  text-decoration: none;
+
+  border-radius: 100px;
+
+  font-weight: 700;
+
+  transition: 0.2s;
+}
+
+
+.spotify-button:hover {
+  transform: translateY(-2px);
+
+  background: white;
+}
+
+
+.spotify-icon {
+  width: 26px;
+
+  height: 26px;
 }
 
 
@@ -669,6 +1064,7 @@ a {
   gap: 5vw;
 }
 
+
 .poetry-number {
   font-size: 12px;
 
@@ -677,6 +1073,7 @@ a {
   padding-top: 8px;
 }
 
+
 .eyebrow-dark {
   font-size: 11px;
 
@@ -684,6 +1081,7 @@ a {
 
   margin-bottom: 40px;
 }
+
 
 .poetry h2 {
   font-family: "Playfair Display", serif;
@@ -699,6 +1097,7 @@ a {
   margin-bottom: 80px;
 }
 
+
 .poetry-big {
   font-size: clamp(28px, 4vw, 55px);
 
@@ -708,6 +1107,7 @@ a {
 
   letter-spacing: -2px;
 }
+
 
 .poetry-text {
   margin-top: 40px;
@@ -740,11 +1140,13 @@ a {
   justify-content: space-between;
 }
 
+
 .contact-small {
   font-size: 11px;
 
   letter-spacing: 5px;
 }
+
 
 .contact h2 {
   font-size: clamp(75px, 13vw, 205px);
@@ -756,49 +1158,81 @@ a {
   margin: 100px 0;
 }
 
+
 .contact h2 em {
   color: #efafc1;
 
   font-family: "Playfair Display", serif;
-
-  font-weight: 600;
 }
 
-.contact-bottom {
+
+.contact-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 35px;
+
+  border-top: 1px solid #333;
+
+  padding-top: 35px;
+}
+
+
+.contact-item {
   display: flex;
 
-  justify-content: space-between;
+  flex-direction: column;
 
-  align-items: flex-end;
-
-  gap: 40px;
+  gap: 12px;
 }
 
-.contact-bottom p {
-  color: #aaa;
 
-  font-size: 14px;
+.contact-item > span {
+  color: #777;
+
+  font-size: 10px;
+
+  letter-spacing: 3px;
 }
 
-.contact-bottom a {
-  font-size: clamp(20px, 3vw, 42px);
+
+.contact-item > a {
+  width: fit-content;
+
+  color: white;
+
+  font-size: clamp(17px, 2vw, 26px);
 
   text-decoration: none;
-
-  border-bottom: 1px solid white;
-
-  padding-bottom: 4px;
 }
 
-.contact-bottom a:hover {
-  color: #efafc1;
 
-  border-color: #efafc1;
+.contact-item > a:hover {
+  color: #efafc1;
+}
+
+
+.instagram-link {
+  display: inline-flex;
+
+  flex-direction: row;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+
+.instagram-icon {
+  width: 36px;
+
+  height: 36px;
 }
 
 
 /* ============================= */
-/* STOPKA */
+/* FOOTER */
 /* ============================= */
 
 footer {
@@ -814,8 +1248,18 @@ footer {
 
   justify-content: space-between;
 
+  gap: 30px;
+
   font-size: 12px;
 }
+
+
+.footer-links {
+  display: flex;
+
+  gap: 20px;
+}
+
 
 footer a {
   color: #aaa;
@@ -832,18 +1276,21 @@ footer a {
 
   .about-grid,
   .theatre-intro,
-  .film-header {
+  .film-header,
+  .video-heading {
     grid-template-columns: 1fr;
   }
+
 
   .about-photo {
     height: 700px;
   }
 
-  .theatre-intro,
-  .film-header {
-    gap: 50px;
+
+  .contact-grid {
+    grid-template-columns: 1fr;
   }
+
 
 }
 
@@ -854,21 +1301,27 @@ footer a {
 
 @media (max-width: 700px) {
 
+
   .header {
     padding: 18px 5%;
   }
+
 
   .nav {
     gap: 14px;
   }
 
+
   .nav a {
     font-size: 9px;
+
     letter-spacing: 0;
   }
 
-  .nav a:nth-child(3),
-  .nav a:nth-child(4) {
+
+  .nav a:nth-child(2),
+  .nav a:nth-child(4),
+  .nav a:nth-child(5) {
     display: none;
   }
 
@@ -883,11 +1336,13 @@ footer a {
     background-position: 60% center;
   }
 
+
   .hero h1 {
     font-size: clamp(60px, 19vw, 100px);
 
     letter-spacing: -4px;
   }
+
 
   .hero-description {
     font-size: 16px;
@@ -895,16 +1350,18 @@ footer a {
     max-width: 330px;
   }
 
+
   .scroll {
     display: none;
   }
 
 
-  /* SEKCJE */
+  /* OGÓLNE */
 
   .section {
     padding: 85px 6%;
   }
+
 
   .section-heading {
     margin-bottom: 55px;
@@ -914,18 +1371,23 @@ footer a {
   /* ABOUT */
 
   .about-grid {
+    grid-template-columns: 1fr;
+
     gap: 55px;
   }
+
 
   .about-photo {
     height: 560px;
   }
+
 
   .about-content h2 {
     font-size: 59px;
 
     letter-spacing: -3px;
   }
+
 
   .about-content > p:not(.small-heading) {
     font-size: 16px;
@@ -938,6 +1400,7 @@ footer a {
     padding: 85px 6%;
   }
 
+
   .statement h2 {
     letter-spacing: -3px;
   }
@@ -945,9 +1408,15 @@ footer a {
 
   /* TEATR */
 
+  .theatre-intro {
+    grid-template-columns: 1fr;
+  }
+
+
   .theatre-intro h2 {
     letter-spacing: -4px;
   }
+
 
   .project {
     grid-template-columns: 45px 1fr;
@@ -955,12 +1424,35 @@ footer a {
     min-height: 150px;
   }
 
+
   .project h3 {
-    font-size: 31px;
+    font-size: 30px;
   }
+
 
   .project:hover {
     padding-left: 0;
+  }
+
+
+  /* WIDEO */
+
+  .video-section {
+    padding: 85px 6%;
+  }
+
+
+  .video-heading {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+
+  .video-heading h2 {
+    font-size: 65px;
+
+    letter-spacing: -4px;
   }
 
 
@@ -972,9 +1464,11 @@ footer a {
     min-height: 600px;
   }
 
+
   .portrait-section img {
     object-position: center top;
   }
+
 
   .portrait-text h2 {
     font-size: 70px;
@@ -983,17 +1477,63 @@ footer a {
   }
 
 
-  /* FILMY */
+  /* GALERIA */
+
+  .gallery-section {
+    padding: 85px 6%;
+  }
+
+
+  .gallery-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 25px;
+  }
+
+
+  .gallery-header h2 {
+    font-size: 70px;
+
+    letter-spacing: -4px;
+  }
+
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+  }
+
+
+  .gallery-photo,
+  .gallery-large,
+  .gallery-wide {
+    grid-column: auto;
+
+    height: 520px;
+  }
+
+
+  /* FILM */
+
+  .film-header {
+    grid-template-columns: 1fr;
+  }
+
 
   .film-header h2 {
     letter-spacing: -4px;
   }
+
 
   .film-row {
     grid-template-columns: 55px 1fr;
 
     gap: 10px;
   }
+
 
   .film-row .role {
     grid-column: 2;
@@ -1003,8 +1543,32 @@ footer a {
     margin-top: 5px;
   }
 
+
   .film-row:hover {
     padding-left: 0;
+  }
+
+
+  /* MUZYKA */
+
+  .music-section {
+    grid-template-columns: 1fr;
+
+    padding: 85px 6%;
+  }
+
+
+  .music-number {
+    margin-bottom: 20px;
+  }
+
+
+  .music-content h2 {
+    font-size: 70px;
+
+    letter-spacing: -4px;
+
+    margin-bottom: 50px;
   }
 
 
@@ -1016,9 +1580,6 @@ footer a {
     padding: 85px 6%;
   }
 
-  .poetry-number {
-    margin-bottom: 20px;
-  }
 
   .poetry h2 {
     font-size: 110px;
@@ -1035,6 +1596,7 @@ footer a {
     padding: 90px 6% 60px;
   }
 
+
   .contact h2 {
     font-size: 73px;
 
@@ -1043,25 +1605,23 @@ footer a {
     margin: 80px 0;
   }
 
-  .contact-bottom {
-    flex-direction: column;
 
-    align-items: flex-start;
+  .contact-grid {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
   }
 
-  .contact-bottom a {
-    font-size: 22px;
-  }
-
-
-  /* FOOTER */
 
   footer {
     padding: 25px 6%;
 
     flex-direction: column;
+  }
 
-    gap: 12px;
+
+  .footer-links {
+    flex-wrap: wrap;
   }
 
 }
