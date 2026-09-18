@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Aleksandra Samelczak | Aktorka • Poetka • Wokalistka</title>
+  <title>Aleksandra Samelczak | Aktorka</title>
 
   <meta
     name="description"
-    content="Aleksandra Samelczak — aktorka, poetka i wokalistka. Aktorka Teatru Polskiego w Poznaniu."
+    content="Aleksandra Samelczak — aktorka teatralna i filmowa, poetka i wokalistka."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+    rel="stylesheet"
   >
 
   <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
-  <header>
-    <div class="logo">AS.</div>
+  <!-- MENU -->
 
-    <nav>
+  <header class="header">
+
+    <a href="#home" class="logo">
+      AS<span>.</span>
+    </a>
+
+    <nav class="nav">
       <a href="#o-mnie">O mnie</a>
       <a href="#teatr">Teatr</a>
       <a href="#film">Film</a>
       <a href="#poezja">Poezja</a>
       <a href="#kontakt">Kontakt</a>
     </nav>
+
   </header>
 
 
@@ -33,162 +49,342 @@
 
     <!-- HERO -->
 
-    <section class="hero">
+    <section class="hero" id="home">
 
-      <p class="small">
-        AKTORKA • POETKA • WOKALISTKA
-      </p>
+      <div class="hero-overlay"></div>
 
-      <h1>
-        Aleksandra<br>
-        Samelczak<span>.</span>
-      </h1>
+      <div class="hero-content">
 
-      <p class="intro">
-        Aktorka Teatru Polskiego w Poznaniu,
-        absolwentka Akademii Sztuk Teatralnych
-        w Krakowie. Poetka i wokalistka zespołu Wieczornik.
-      </p>
+        <p class="eyebrow">
+          AKTORKA • POETKA • WOKALISTKA
+        </p>
 
-      <a class="button" href="#o-mnie">
-        Poznaj mnie
-      </a>
+        <h1>
+          Aleksandra<br>
+          <span>Samelczak.</span>
+        </h1>
+
+        <p class="hero-description">
+          Aktorka teatralna i filmowa.
+          Członkini zespołu Teatru Polskiego w Poznaniu.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="#o-mnie" class="button button-light">
+            Poznaj mnie
+          </a>
+
+          <a href="#kontakt" class="button button-outline">
+            Kontakt
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="scroll">
+        SCROLL ↓
+      </div>
 
     </section>
+
 
 
     <!-- O MNIE -->
 
-    <section id="o-mnie" class="section">
+    <section class="section about" id="o-mnie">
 
-      <p class="number">01</p>
+      <div class="section-heading">
 
-      <h2>O mnie</h2>
+        <span>01</span>
 
-      <p class="text">
-        Aleksandra Samelczak jest absolwentką Wydziału Aktorskiego
-        Akademii Sztuk Teatralnych im. Stanisława Wyspiańskiego
-        w Krakowie, którą ukończyła w 2021 roku.
-      </p>
+        <p>O mnie</p>
 
-      <p class="text">
-        Jeszcze podczas studiów zadebiutowała na scenie
-        Teatru im. Juliusza Słowackiego w Krakowie w spektaklu
-        „Kariera Arturo Ui” w reżyserii Remigiusza Brzyka.
-      </p>
+      </div>
 
-      <p class="text">
-        Za tytułową rolę w spektaklu dyplomowym
-        „Joanna d’Arc” w reżyserii Moniki Strzępki
-        otrzymała wyróżnienie aktorskie podczas
-        38. Festiwalu Szkół Teatralnych w Łodzi.
-      </p>
 
-      <p class="text">
-        Jest również laureatką III Nagrody
-        Ogólnopolskiego Konkursu Wokalnego
-        „Pamiętajmy o Osieckiej”.
-      </p>
+      <div class="about-grid">
+
+        <div class="about-photo-wrapper">
+
+          <img
+            src="OlaSamelczaksylwetka.jpeg"
+            alt="Aleksandra Samelczak"
+            class="about-photo"
+          >
+
+        </div>
+
+
+        <div class="about-content">
+
+          <p class="small-heading">
+            ALEKSANDRA SAMELCZAK
+          </p>
+
+          <h2>
+            Aktorka.<br>
+            Poetka.<br>
+            <em>Artystka.</em>
+          </h2>
+
+          <p>
+            Absolwentka Wydziału Aktorskiego Akademii Sztuk
+            Teatralnych im. Stanisława Wyspiańskiego
+            w Krakowie.
+          </p>
+
+          <p>
+            Jeszcze podczas studiów zadebiutowała na scenie
+            Teatru im. Juliusza Słowackiego w Krakowie
+            w spektaklu „Kariera Arturo Ui”.
+          </p>
+
+          <p>
+            Za tytułową rolę w spektaklu dyplomowym
+            „Joanna d’Arc” otrzymała wyróżnienie aktorskie
+            podczas 38. Festiwalu Szkół Teatralnych w Łodzi.
+          </p>
+
+          <p>
+            Jest również laureatką III Nagrody
+            Ogólnopolskiego Konkursu Wokalnego
+            „Pamiętajmy o Osieckiej”.
+          </p>
+
+        </div>
+
+      </div>
 
     </section>
+
+
+
+    <!-- DUŻY CYTAT / HASŁO -->
+
+    <section class="statement">
+
+      <p>
+        teatr • film • poezja • muzyka
+      </p>
+
+      <h2>
+        Opowiadanie historii<br>
+        w różnych <em>formach.</em>
+      </h2>
+
+    </section>
+
 
 
     <!-- TEATR -->
 
-    <section id="teatr" class="section dark">
+    <section class="section dark-section" id="teatr">
 
-      <p class="number">02</p>
+      <div class="section-heading light-heading">
 
-      <h2>Teatr</h2>
+        <span>02</span>
 
-      <p class="text">
-        Od 2020 roku Aleksandra współpracuje z Teatrem Polskim
-        w Poznaniu, a od 2022 roku jest członkinią jego
-        zespołu aktorskiego.
-      </p>
+        <p>Teatr</p>
 
-      <div class="cards">
+      </div>
 
-        <div class="card">
-          <h3>Dom lalek</h3>
-          <p>
-            Teatr Polski w Poznaniu
-          </p>
-        </div>
 
-        <div class="card">
-          <h3>EXTRAVAGANZA o religii</h3>
-          <p>
-            Reżyseria: Joanna Drozda
-          </p>
-        </div>
+      <div class="theatre-intro">
 
-        <div class="card">
-          <h3>Kordian i cham</h3>
-          <p>
-            Powidok folwarczny<br>
-            Reżyseria: Joanna Bednarczyk
-          </p>
-        </div>
+        <h2>
+          Teatr Polski<br>
+          <em>w Poznaniu.</em>
+        </h2>
 
-        <div class="card">
-          <h3>Pieścidełko</h3>
-          <p>
-            Teatr Narodowy nad Wartą<br>
-            Reżyseria: Konrad Marek Cichoń
-          </p>
-        </div>
+        <p>
+          Od 2020 roku Aleksandra Samelczak współpracuje
+          z Teatrem Polskim w Poznaniu.
+          Od 2022 roku jest członkinią jego zespołu aktorskiego.
+        </p>
+
+      </div>
+
+
+      <div class="projects">
+
+        <article class="project">
+
+          <span>01</span>
+
+          <div>
+            <h3>Dom lalek</h3>
+
+            <p>
+              Teatr Polski w Poznaniu
+            </p>
+          </div>
+
+        </article>
+
+
+        <article class="project">
+
+          <span>02</span>
+
+          <div>
+            <h3>
+              EXTRAVAGANZA<br>
+              o religii
+            </h3>
+
+            <p>
+              reż. Joanna Drozda
+            </p>
+          </div>
+
+        </article>
+
+
+        <article class="project">
+
+          <span>03</span>
+
+          <div>
+            <h3>Kordian i cham</h3>
+
+            <p>
+              Powidok folwarczny
+            </p>
+          </div>
+
+        </article>
+
+
+        <article class="project">
+
+          <span>04</span>
+
+          <div>
+            <h3>Pieścidełko</h3>
+
+            <p>
+              Teatr Narodowy nad Wartą
+            </p>
+          </div>
+
+        </article>
 
       </div>
 
     </section>
+
+
+
+    <!-- PORTRET -->
+
+    <section class="portrait-section">
+
+      <img
+        src="OlaSamelczakportret.jpeg"
+        alt="Portret Aleksandry Samelczak"
+      >
+
+      <div class="portrait-text">
+
+        <p>
+          ALEKSANDRA
+        </p>
+
+        <h2>
+          Samelczak<span>.</span>
+        </h2>
+
+      </div>
+
+    </section>
+
 
 
     <!-- FILM -->
 
-    <section id="film" class="section">
+    <section class="section film-section" id="film">
 
-      <p class="number">03</p>
+      <div class="section-heading">
 
-      <h2>Film<br>i telewizja</h2>
+        <span>03</span>
 
-      <p class="text">
-        Aleksandra występuje również w produkcjach
-        filmowych i telewizyjnych. Szerszej publiczności
-        znana jest między innymi z roli Julki
-        w serialu „Bunt!”.
-      </p>
+        <p>Film i telewizja</p>
 
-      <div class="cards film-cards">
+      </div>
 
-        <div class="card">
-          <p>2022</p>
+
+      <div class="film-header">
+
+        <h2>
+          Przed<br>
+          <em>kamerą.</em>
+        </h2>
+
+        <p>
+          Role w produkcjach filmowych i telewizyjnych.
+          Aleksandra pojawiła się między innymi
+          w serialu „Bunt!” jako Julka.
+        </p>
+
+      </div>
+
+
+      <div class="film-list">
+
+        <div class="film-row">
+
+          <span class="year">2022</span>
+
           <h3>Bunt!</h3>
-          <p>Julka</p>
+
+          <span class="role">Julka</span>
+
         </div>
 
-        <div class="card">
-          <p>2021</p>
+
+        <div class="film-row">
+
+          <span class="year">2021</span>
+
           <h3>Lockdown</h3>
-          <p>Film</p>
+
+          <span class="role">film</span>
+
         </div>
 
-        <div class="card">
-          <p>2021</p>
+
+        <div class="film-row">
+
+          <span class="year">2021</span>
+
           <h3>Człowiek z walizką</h3>
-          <p>Film</p>
+
+          <span class="role">film</span>
+
         </div>
 
-        <div class="card">
-          <p>2020</p>
+
+        <div class="film-row">
+
+          <span class="year">2020</span>
+
           <h3>Jak zostać gwiazdą</h3>
-          <p>Film</p>
+
+          <span class="role">film</span>
+
         </div>
 
-        <div class="card">
-          <p>2019</p>
+
+        <div class="film-row">
+
+          <span class="year">2019</span>
+
           <h3>Legiony</h3>
-          <p>Film</p>
+
+          <span class="role">film</span>
+
         </div>
 
       </div>
@@ -196,57 +392,92 @@
     </section>
 
 
+
     <!-- POEZJA -->
 
-    <section id="poezja" class="section dark">
+    <section class="poetry" id="poezja">
 
-      <p class="number">04</p>
+      <div class="poetry-number">
+        04
+      </div>
 
-      <h2>Dom.</h2>
 
-      <p class="text">
-        W listopadzie 2025 roku ukazał się debiutancki
-        tom poetycki Aleksandry Samelczak zatytułowany
-        „Dom”, wydany przez Wydawnictwo Austeria
-        w serii poetyckiej Bronisława Maja.
-      </p>
+      <div class="poetry-content">
 
-      <p class="text">
-        Aleksandra jest także wokalistką zespołu Wieczornik,
-        z którym rozwija swoją działalność muzyczną.
-      </p>
+        <p class="eyebrow-dark">
+          POEZJA
+        </p>
+
+        <h2>
+          „Dom”
+        </h2>
+
+        <p class="poetry-big">
+          Debiutancki tom poetycki
+          Aleksandry Samelczak.
+        </p>
+
+        <p class="poetry-text">
+          W 2025 roku ukazał się tom poetycki
+          „Dom”, wydany przez Wydawnictwo Austeria.
+          Aleksandra jest również wokalistką
+          zespołu Wieczornik.
+        </p>
+
+      </div>
 
     </section>
 
 
+
     <!-- KONTAKT -->
 
-    <section id="kontakt" class="contact">
+    <section class="contact" id="kontakt">
 
-      <p>KONTAKT</p>
+      <p class="contact-small">
+        KONTAKT
+      </p>
 
       <h2>
         Zróbmy coś<br>
-        razem.
+        <em>razem.</em>
       </h2>
 
-      <p class="contact-description">
-        Kontakt zawodowy • teatr • film • muzyka
-      </p>
+      <div class="contact-bottom">
 
-      <!--
-      Jak będziemy mieli właściwy e-mail,
-      wstawimy go tutaj.
-      -->
+        <p>
+          teatr • film • muzyka • projekty artystyczne
+        </p>
+
+        <!-- PODMIEŃ NA PRAWDZIWY MAIL -->
+
+        <a href="mailto:kontakt@email.pl">
+          kontakt@email.pl ↗
+        </a>
+
+      </div>
 
     </section>
 
   </main>
 
 
+
+  <!-- STOPKA -->
+
   <footer>
-    © 2026 Aleksandra Samelczak
+
+    <p>
+      © 2026 Aleksandra Samelczak
+    </p>
+
+    <a href="#home">
+      Powrót na górę ↑
+    </a>
+
   </footer>
 
+
 </body>
+
 </html>
