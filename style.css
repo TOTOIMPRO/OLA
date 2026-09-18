@@ -1,4 +1,22 @@
 /* ===================================== */
+/* KOLORY */
+/* ===================================== */
+
+:root {
+  --cream: #f2efe8;
+  --black: #111111;
+
+  /* NOWY CIEMNIEJSZY RÓŻ */
+  --pink: #9f4565;
+  --pink-dark: #7d334e;
+  --pink-soft: #c97995;
+
+  --gray: #777777;
+  --line: #aaaaaa;
+}
+
+
+/* ===================================== */
 /* RESET */
 /* ===================================== */
 
@@ -14,7 +32,7 @@ html {
 
 body {
   font-family: "DM Sans", Arial, sans-serif;
-  background: #f2efe8;
+  background: var(--cream);
   color: #151515;
   overflow-x: hidden;
 }
@@ -29,7 +47,7 @@ a {
 }
 
 ::selection {
-  background: #da7694;
+  background: var(--pink);
   color: white;
 }
 
@@ -68,7 +86,7 @@ a {
 }
 
 .logo span {
-  color: #efafc1;
+  color: var(--pink-soft);
 }
 
 .nav {
@@ -193,7 +211,7 @@ a {
 }
 
 .hero h1 span {
-  color: #efafc1;
+  color: var(--pink-soft);
 
   font-family: "Playfair Display", serif;
   font-style: italic;
@@ -245,7 +263,7 @@ a {
 }
 
 .button-light:hover {
-  background: #efafc1;
+  background: var(--pink-soft);
 }
 
 .button-outline {
@@ -301,7 +319,7 @@ a {
 }
 
 .about-content h2 em {
-  color: #cf6081;
+  color: var(--pink);
 
   font-family: "Playfair Display", serif;
   font-weight: 600;
@@ -324,7 +342,7 @@ a {
 .statement {
   padding: 105px 7%;
 
-  background: #d86d8d;
+  background: var(--pink);
 
   color: white;
 }
@@ -392,7 +410,7 @@ a {
 }
 
 .theatre-header h2 em {
-  color: #efafc1;
+  color: var(--pink-soft);
 
   font-family: "Playfair Display", serif;
 }
@@ -439,7 +457,7 @@ a {
 }
 
 .theatre-card:hover {
-  background: #d86d8d;
+  background: var(--pink);
 }
 
 .card-number {
@@ -491,7 +509,7 @@ a {
 .video-section {
   padding: 115px 7%;
 
-  background: #f2efe8;
+  background: var(--cream);
 }
 
 .video-heading {
@@ -525,7 +543,7 @@ a {
 }
 
 .video-heading h2 em {
-  color: #cf6081;
+  color: var(--pink);
 
   font-family: "Playfair Display", serif;
 }
@@ -637,7 +655,7 @@ a {
 }
 
 .portrait-text h2 span {
-  color: #efafc1;
+  color: var(--pink-soft);
 }
 
 
@@ -684,7 +702,7 @@ a {
 }
 
 .gallery-heading h2 span {
-  color: #efafc1;
+  color: var(--pink-soft);
 }
 
 .gallery-grid {
@@ -778,7 +796,7 @@ a {
 }
 
 .film-header h2 em {
-  color: #cf6081;
+  color: var(--pink);
 
   font-family: "Playfair Display", serif;
 }
@@ -870,7 +888,7 @@ a {
 }
 
 .music-content h2 span {
-  color: #efafc1;
+  color: var(--pink-soft);
 }
 
 .music-lead {
@@ -925,7 +943,7 @@ a {
 
   border-radius: 100px;
 
-  background: #efafc1;
+  background: var(--pink-soft);
 
   color: #111;
 
@@ -961,7 +979,7 @@ a {
 
   padding: 110px 7%;
 
-  background: #d86d8d;
+  background: var(--pink);
 
   color: white;
 }
@@ -1039,7 +1057,7 @@ a {
 .book-button:hover {
   transform: translateY(-2px);
 
-  background: #111;
+  background: var(--pink-dark);
 
   color: white;
 }
@@ -1078,7 +1096,7 @@ a {
 }
 
 .contact h2 em {
-  color: #efafc1;
+  color: var(--pink-soft);
 
   font-family: "Playfair Display", serif;
 }
@@ -1121,7 +1139,7 @@ a {
 }
 
 .contact-item > a:hover {
-  color: #efafc1;
+  color: var(--pink-soft);
 }
 
 .instagram-link {
@@ -1220,7 +1238,6 @@ footer a {
 
   .nav a {
     font-size: 9px;
-
     letter-spacing: 0;
   }
 
@@ -1526,7 +1543,7 @@ footer a {
   }
 
 
-  /* FOOTER */
+  /* STOPKA */
 
   footer {
     flex-direction: column;
