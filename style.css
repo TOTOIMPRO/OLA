@@ -14,22 +14,23 @@ html {
 
 body {
   font-family: "DM Sans", sans-serif;
-
   background: #f1eee7;
-
   color: #131313;
-
   overflow-x: hidden;
 }
 
 img {
   display: block;
-
   width: 100%;
 }
 
 a {
   color: inherit;
+}
+
+::selection {
+  background: #d86d8d;
+  color: white;
 }
 
 
@@ -39,71 +40,102 @@ a {
 
 .header {
   position: fixed;
-
   top: 0;
-
   left: 0;
 
   width: 100%;
 
-  padding: 22px 5%;
+  padding: 18px 5%;
 
   display: flex;
-
   justify-content: space-between;
-
   align-items: center;
 
   z-index: 1000;
 
   color: white;
 
-  background: rgba(15, 15, 15, 0.28);
+  background: rgba(15, 15, 15, 0.32);
 
   backdrop-filter: blur(12px);
-
   -webkit-backdrop-filter: blur(12px);
 }
 
-
 .logo {
-  font-size: 27px;
-
+  font-size: 21px;
   font-weight: 700;
 
-  text-decoration: none;
-
   letter-spacing: -1px;
-}
 
+  text-decoration: none;
+}
 
 .logo span {
-  color: #e987a4;
+  color: #efafc1;
 }
-
 
 .nav {
   display: flex;
-
-  gap: 25px;
+  gap: 23px;
 }
 
-
 .nav a {
-  font-size: 12px;
+  font-size: 10px;
 
   text-decoration: none;
 
   text-transform: uppercase;
 
-  letter-spacing: 1px;
+  letter-spacing: 1.2px;
 
   transition: opacity 0.2s ease;
 }
 
-
 .nav a:hover {
   opacity: 0.55;
+}
+
+
+/* ============================= */
+/* ELEMENTY WSPÓLNE */
+/* ============================= */
+
+.section {
+  padding: 105px 7%;
+}
+
+.section-heading {
+  padding-bottom: 16px;
+
+  margin-bottom: 65px;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  border-bottom: 1px solid #aaa;
+}
+
+.section-heading span,
+.section-number {
+  font-size: 10px;
+  opacity: 0.5;
+}
+
+.section-heading p {
+  font-size: 10px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 3px;
+}
+
+.mini-label {
+  font-size: 9px;
+
+  letter-spacing: 4px;
+
+  text-transform: uppercase;
 }
 
 
@@ -114,218 +146,133 @@ a {
 .hero {
   min-height: 100vh;
 
-  padding: 160px 7% 70px;
+  padding: 130px 7% 65px;
 
   position: relative;
 
   display: flex;
-
   align-items: flex-end;
 
   color: white;
 
   background-image:
-
     linear-gradient(
       90deg,
-      rgba(0, 0, 0, 0.72) 0%,
-      rgba(0, 0, 0, 0.25) 55%,
+      rgba(0, 0, 0, 0.70) 0%,
+      rgba(0, 0, 0, 0.26) 53%,
       rgba(0, 0, 0, 0.08) 100%
     ),
-
     url("OlaSamelczakportret.jpeg");
 
   background-size: cover;
-
   background-position: center 25%;
 }
 
-
 .hero-overlay {
   position: absolute;
-
   inset: 0;
 
   background:
-
     linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.45),
-      transparent 50%
+      transparent 48%
     );
 }
 
-
 .hero-content {
   position: relative;
-
   z-index: 2;
 
-  max-width: 1100px;
+  max-width: 900px;
 }
-
 
 .eyebrow {
-  font-size: 12px;
+  margin-bottom: 22px;
+
+  font-size: 9px;
 
   letter-spacing: 4px;
-
-  margin-bottom: 30px;
 }
 
-
 .hero h1 {
-  font-size: clamp(68px, 10.5vw, 170px);
+  font-size: clamp(50px, 6.5vw, 105px);
 
-  line-height: 0.82;
+  line-height: 0.86;
 
-  letter-spacing: -7px;
+  letter-spacing: -4px;
 
   font-weight: 600;
 }
-
 
 .hero h1 span {
   font-family: "Playfair Display", serif;
 
   font-style: italic;
 
-  font-weight: 600;
-
   color: #efafc1;
 }
 
-
 .hero-description {
-  margin-top: 40px;
+  max-width: 430px;
 
-  max-width: 500px;
+  margin-top: 30px;
 
-  font-size: 19px;
+  font-size: 15px;
 
-  line-height: 1.55;
+  line-height: 1.6;
 }
-
 
 .hero-buttons {
-  display: flex;
+  margin-top: 27px;
 
+  display: flex;
   flex-wrap: wrap;
 
-  gap: 12px;
-
-  margin-top: 32px;
+  gap: 10px;
 }
 
-
 .button {
-  padding: 14px 25px;
+  display: inline-block;
+
+  padding: 11px 20px;
 
   border-radius: 100px;
 
-  text-decoration: none;
-
-  font-size: 14px;
+  font-size: 11px;
 
   font-weight: 600;
 
+  text-decoration: none;
+
   transition: 0.25s;
 }
-
 
 .button:hover {
   transform: translateY(-2px);
 }
 
-
 .button-light {
   background: white;
-
   color: #111;
 }
-
 
 .button-light:hover {
   background: #efafc1;
 }
 
-
 .button-outline {
   border: 1px solid rgba(255, 255, 255, 0.8);
-
-  color: white;
 }
-
 
 .button-outline:hover {
   background: white;
-
   color: #111;
 }
 
 
-.scroll {
-  position: absolute;
-
-  right: 5%;
-
-  bottom: 45px;
-
-  z-index: 2;
-
-  font-size: 10px;
-
-  letter-spacing: 3px;
-
-  transform: rotate(90deg);
-
-  transform-origin: right;
-}
-
-
 /* ============================= */
-/* OGÓLNE SEKCJE */
-/* ============================= */
-
-.section {
-  padding: 120px 7%;
-}
-
-
-.section-heading {
-  padding-bottom: 20px;
-
-  margin-bottom: 80px;
-
-  border-bottom: 1px solid #aaa;
-
-  display: flex;
-
-  gap: 25px;
-
-  align-items: center;
-}
-
-
-.section-heading span,
-.section-number {
-  font-size: 12px;
-
-  opacity: 0.5;
-}
-
-
-.section-heading p {
-  font-size: 13px;
-
-  text-transform: uppercase;
-
-  letter-spacing: 3px;
-}
-
-
-/* ============================= */
-/* ABOUT */
+/* O MNIE */
 /* ============================= */
 
 .about-grid {
@@ -333,101 +280,88 @@ a {
 
   grid-template-columns: 0.9fr 1.1fr;
 
-  gap: 8vw;
+  gap: 7vw;
 
   align-items: start;
 }
 
-
 .about-photo {
-  width: 100%;
-
-  height: 820px;
+  height: min(72vw, 740px);
 
   object-fit: cover;
 
   object-position: center top;
 }
 
-
 .small-heading {
-  font-size: 11px;
+  margin-bottom: 24px;
+
+  font-size: 9px;
 
   letter-spacing: 3px;
-
-  margin-bottom: 30px;
 
   opacity: 0.5;
 }
 
-
 .about-content h2 {
-  font-size: clamp(60px, 7.5vw, 115px);
+  margin-bottom: 42px;
 
-  line-height: 0.87;
+  font-size: clamp(43px, 4.8vw, 72px);
 
-  letter-spacing: -5px;
+  line-height: 0.9;
 
-  margin-bottom: 55px;
+  letter-spacing: -3px;
 }
-
 
 .about-content h2 em {
   font-family: "Playfair Display", serif;
 
-  font-weight: 600;
-
   color: #cf6081;
+
+  font-weight: 600;
 }
 
-
 .about-content > p:not(.small-heading) {
-  font-size: 18px;
+  max-width: 600px;
 
-  line-height: 1.7;
+  margin-bottom: 20px;
 
-  max-width: 650px;
+  font-size: 15px;
 
-  margin-bottom: 25px;
+  line-height: 1.75;
 }
 
 
 /* ============================= */
-/* STATEMENT */
+/* RÓŻOWE HASŁO */
 /* ============================= */
 
 .statement {
-  background: #d86d8d;
+  padding: 95px 7%;
 
-  padding: 120px 7%;
+  background: #d86d8d;
 
   color: white;
 }
 
-
 .statement > p {
-  font-size: 11px;
+  margin-bottom: 30px;
+
+  font-size: 9px;
 
   letter-spacing: 4px;
-
-  text-transform: uppercase;
-
-  margin-bottom: 40px;
 }
-
 
 .statement h2 {
-  font-size: clamp(55px, 8vw, 125px);
+  font-size: clamp(40px, 5.5vw, 75px);
 
-  line-height: 0.9;
+  line-height: 0.95;
 
-  letter-spacing: -5px;
+  letter-spacing: -3px;
 }
-
 
 .statement h2 em {
   font-family: "Playfair Display", serif;
-
   font-weight: 600;
 }
 
@@ -436,159 +370,189 @@ a {
 /* TEATR */
 /* ============================= */
 
-.dark-section {
+.theatre-section {
+  padding: 105px 7%;
+
   background: #111;
 
   color: white;
 }
 
-
-.light-heading {
-  border-color: #444;
+.section-heading-dark {
+  border-color: #3a3a3a;
 }
 
+.theatre-header {
+  margin-bottom: 65px;
 
-.theatre-intro {
   display: grid;
 
   grid-template-columns: 1.2fr 0.8fr;
 
-  gap: 8vw;
-
   align-items: end;
 
-  margin-bottom: 100px;
+  gap: 7vw;
 }
 
+.theatre-header .mini-label {
+  margin-bottom: 20px;
 
-.theatre-intro h2 {
-  font-size: clamp(65px, 9vw, 140px);
-
-  line-height: 0.85;
-
-  letter-spacing: -6px;
+  color: #999;
 }
 
+.theatre-header h2 {
+  font-size: clamp(45px, 5.8vw, 82px);
 
-.theatre-intro h2 em {
-  color: #efafc1;
+  line-height: 0.9;
 
+  letter-spacing: -3.5px;
+}
+
+.theatre-header h2 em {
   font-family: "Playfair Display", serif;
 
-  font-weight: 600;
+  color: #efafc1;
 }
 
+.theatre-description {
+  max-width: 460px;
 
-.theatre-intro p {
-  max-width: 500px;
-
-  font-size: 18px;
+  font-size: 15px;
 
   line-height: 1.7;
 
-  color: #c8c8c8;
+  color: #bbb;
 }
 
 
-.projects {
-  border-top: 1px solid #444;
-}
+/* KARTY SPEKTAKLI */
 
-
-.project {
-  min-height: 190px;
-
-  padding: 32px 0;
-
-  border-bottom: 1px solid #444;
-
+.theatre-grid {
   display: grid;
 
-  grid-template-columns: 100px 1fr;
+  grid-template-columns: repeat(3, 1fr);
 
-  align-items: center;
+  border-top: 1px solid #383838;
+
+  border-left: 1px solid #383838;
+}
+
+.theatre-card {
+  position: relative;
+
+  min-height: 225px;
+
+  padding: 25px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  border-right: 1px solid #383838;
+
+  border-bottom: 1px solid #383838;
 
   color: white;
 
   text-decoration: none;
 
-  transition: 0.3s;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
 }
 
+.theatre-card:hover {
+  z-index: 2;
 
-.project:hover {
-  padding-left: 30px;
+  background: #d86d8d;
 
-  background: #1b1b1b;
+  color: white;
 }
 
-
-.project > span {
-  font-size: 12px;
+.card-number {
+  font-size: 9px;
 
   color: #777;
 }
 
-
-.project h3 {
-  font-size: clamp(32px, 4vw, 65px);
-
-  letter-spacing: -2px;
-
-  margin-bottom: 8px;
+.theatre-card:hover .card-number {
+  color: white;
 }
 
+.theatre-card h3 {
+  max-width: 90%;
 
-.project p {
-  font-size: 14px;
+  margin-bottom: 9px;
 
-  color: #aaa;
+  font-size: clamp(20px, 2vw, 29px);
+
+  line-height: 1.05;
+
+  letter-spacing: -1px;
+}
+
+.theatre-card p {
+  font-size: 11px;
+
+  color: #999;
+}
+
+.theatre-card:hover p {
+  color: white;
+}
+
+.arrow {
+  position: absolute;
+
+  top: 22px;
+  right: 22px;
+
+  font-size: 17px;
 }
 
 
 /* ============================= */
-/* VIDEO / WIZYTÓWKA */
+/* WIDEO */
 /* ============================= */
 
 .video-section {
+  padding: 105px 7%;
+
   background: #f1eee7;
-
-  padding: 120px 7%;
 }
-
 
 .video-heading {
+  margin-bottom: 55px;
+
   display: grid;
 
-  grid-template-columns: 1.3fr 0.7fr;
+  grid-template-columns: 1.25fr 0.75fr;
 
-  gap: 8vw;
+  gap: 7vw;
 
   align-items: end;
-
-  margin-bottom: 70px;
 }
 
+.video-heading .section-number {
+  display: block;
 
-.video-eyebrow {
-  margin-top: 25px;
-
-  margin-bottom: 20px;
-
-  font-size: 11px;
-
-  letter-spacing: 4px;
+  margin-bottom: 24px;
 }
 
+.video-heading .mini-label {
+  margin-bottom: 16px;
+}
 
 .video-heading h2 {
-  font-size: clamp(65px, 9vw, 140px);
+  font-size: clamp(45px, 5.8vw, 82px);
 
-  line-height: 0.82;
+  line-height: 0.9;
 
-  letter-spacing: -6px;
+  letter-spacing: -3.5px;
 }
-
 
 .video-heading h2 em {
   font-family: "Playfair Display", serif;
@@ -596,28 +560,21 @@ a {
   color: #cf6081;
 }
 
-
 .video-description {
-  font-size: 18px;
-
-  line-height: 1.6;
-
-  max-width: 350px;
+  font-size: 15px;
 }
 
-
 .video-wrapper {
-  width: 100%;
-
   position: relative;
+
+  width: 100%;
 
   aspect-ratio: 16 / 9;
 
-  background: black;
-
   overflow: hidden;
-}
 
+  background: black;
+}
 
 .video-wrapper iframe {
   position: absolute;
@@ -625,25 +582,23 @@ a {
   inset: 0;
 
   width: 100%;
-
   height: 100%;
 }
 
-
-.youtube-link {
+.text-link {
   display: inline-block;
 
-  margin-top: 25px;
+  margin-top: 20px;
 
-  font-size: 14px;
+  padding-bottom: 3px;
+
+  border-bottom: 1px solid #111;
+
+  font-size: 11px;
 
   font-weight: 600;
 
   text-decoration: none;
-
-  border-bottom: 1px solid #111;
-
-  padding-bottom: 3px;
 }
 
 
@@ -652,30 +607,27 @@ a {
 /* ============================= */
 
 .portrait-section {
-  height: 100vh;
-
-  min-height: 700px;
-
   position: relative;
+
+  height: 82vh;
+
+  min-height: 620px;
 
   overflow: hidden;
 
   background: black;
 }
 
-
 .portrait-section img {
   width: 100%;
-
   height: 100%;
 
   object-fit: cover;
 
   object-position: center 25%;
 
-  opacity: 0.92;
+  opacity: 0.93;
 }
-
 
 .portrait-section::after {
   content: "";
@@ -685,14 +637,12 @@ a {
   inset: 0;
 
   background:
-
     linear-gradient(
       0deg,
-      rgba(0, 0, 0, 0.65),
-      rgba(0, 0, 0, 0.05)
+      rgba(0, 0, 0, 0.63),
+      rgba(0, 0, 0, 0.03)
     );
 }
-
 
 .portrait-text {
   position: absolute;
@@ -700,30 +650,26 @@ a {
   z-index: 2;
 
   left: 7%;
-
   bottom: 8%;
 
   color: white;
 }
 
-
 .portrait-text p {
-  font-size: 11px;
+  margin-bottom: 8px;
+
+  font-size: 9px;
 
   letter-spacing: 5px;
-
-  margin-bottom: 10px;
 }
-
 
 .portrait-text h2 {
-  font-size: clamp(70px, 12vw, 190px);
+  font-size: clamp(50px, 7vw, 110px);
 
-  letter-spacing: -7px;
+  line-height: 0.85;
 
-  line-height: 0.8;
+  letter-spacing: -4px;
 }
-
 
 .portrait-text h2 span {
   color: #efafc1;
@@ -735,80 +681,138 @@ a {
 /* ============================= */
 
 .gallery-section {
-  padding: 120px 7%;
+  padding: 105px 7%;
 
   background: #111;
 
   color: white;
 }
 
+.gallery-heading {
+  margin-bottom: 55px;
 
-.gallery-header {
-  display: flex;
+  display: grid;
 
-  justify-content: space-between;
+  grid-template-columns: 60px 1fr;
 
-  align-items: flex-end;
-
-  margin-bottom: 75px;
+  align-items: end;
 }
 
+.gallery-heading > span {
+  font-size: 10px;
 
-.gallery-header h2 {
-  font-size: clamp(65px, 10vw, 150px);
-
-  letter-spacing: -6px;
-
-  line-height: 0.8;
+  color: #777;
 }
 
+.gallery-heading .mini-label {
+  margin-bottom: 16px;
 
-.gallery-header h2 span {
+  color: #888;
+}
+
+.gallery-heading h2 {
+  font-size: clamp(45px, 6vw, 85px);
+
+  line-height: 0.85;
+
+  letter-spacing: -4px;
+}
+
+.gallery-heading h2 span {
   color: #efafc1;
 }
 
 
+/*
+  Asymetryczna galeria.
+  Każde zdjęcie ma trochę inną wielkość,
+  więc całość wygląda bardziej editorialowo.
+*/
+
 .gallery-grid {
   display: grid;
 
-  grid-template-columns: 1.25fr 0.75fr;
+  grid-template-columns: repeat(12, 1fr);
 
-  gap: 18px;
+  grid-auto-rows: 80px;
+
+  gap: 14px;
 }
 
-
-.gallery-photo {
-  height: 520px;
-
+.photo {
   overflow: hidden;
+
+  background: #222;
 }
 
-
-.gallery-photo img {
+.photo img {
   width: 100%;
-
   height: 100%;
 
   object-fit: cover;
 
-  transition: transform 0.7s ease;
+  transition:
+    transform 0.6s ease,
+    filter 0.6s ease;
 }
 
-
-.gallery-photo:hover img {
+.photo:hover img {
   transform: scale(1.025);
 }
 
 
-.gallery-large {
-  height: 760px;
+/* LEWA DUŻA */
+
+.photo-one {
+  grid-column: 1 / span 7;
+
+  grid-row: 1 / span 7;
 }
 
 
-.gallery-wide {
-  grid-column: 1 / -1;
+/* PRAWA GÓRNA */
 
-  height: 650px;
+.photo-two {
+  grid-column: 8 / span 5;
+
+  grid-row: 1 / span 4;
+}
+
+
+/* PRAWA DOLNA */
+
+.photo-three {
+  grid-column: 8 / span 5;
+
+  grid-row: 5 / span 5;
+}
+
+
+/* DOLNA SZEROKA */
+
+.photo-four {
+  grid-column: 1 / span 7;
+
+  grid-row: 8 / span 6;
+}
+
+
+/* delikatnie inne kadry */
+
+.photo-one img {
+  object-position: center;
+}
+
+.photo-two img {
+  object-position: center 25%;
+}
+
+.photo-three img {
+  object-position: center;
+}
+
+.photo-four img {
+  object-position: center 35%;
 }
 
 
@@ -817,26 +821,24 @@ a {
 /* ============================= */
 
 .film-header {
+  margin-bottom: 65px;
+
   display: grid;
 
   grid-template-columns: 1.2fr 0.8fr;
 
-  gap: 8vw;
+  gap: 7vw;
 
   align-items: end;
-
-  margin-bottom: 100px;
 }
-
 
 .film-header h2 {
-  font-size: clamp(65px, 9vw, 135px);
+  font-size: clamp(45px, 5.8vw, 82px);
 
-  line-height: 0.85;
+  line-height: 0.9;
 
-  letter-spacing: -6px;
+  letter-spacing: -3.5px;
 }
-
 
 .film-header h2 em {
   font-family: "Playfair Display", serif;
@@ -844,59 +846,46 @@ a {
   color: #cf6081;
 }
 
-
 .film-header > p {
-  max-width: 480px;
+  max-width: 450px;
 
-  font-size: 18px;
+  font-size: 15px;
 
   line-height: 1.7;
 }
-
 
 .film-list {
   border-top: 1px solid #aaa;
 }
 
-
 .film-row {
-  padding: 35px 0;
+  padding: 25px 0;
 
   display: grid;
 
-  grid-template-columns: 100px 1fr 180px;
+  grid-template-columns: 90px 1fr 150px;
 
   align-items: center;
 
   border-bottom: 1px solid #aaa;
-
-  transition: 0.25s;
 }
 
-
-.film-row:hover {
-  padding-left: 20px;
-}
-
-
-.year {
-  font-size: 13px;
+.film-row > span {
+  font-size: 10px;
 
   color: #777;
 }
 
-
 .film-row h3 {
-  font-size: clamp(28px, 4vw, 54px);
+  font-size: clamp(21px, 2.5vw, 34px);
 
-  letter-spacing: -2px;
+  letter-spacing: -1px;
 }
 
-
-.role {
+.film-row p {
   text-align: right;
 
-  font-size: 14px;
+  font-size: 11px;
 
   color: #666;
 }
@@ -907,128 +896,116 @@ a {
 /* ============================= */
 
 .music-section {
-  padding: 120px 7%;
+  padding: 105px 7%;
+
+  display: grid;
+
+  grid-template-columns: 70px 1fr;
+
+  gap: 4vw;
 
   background: #171717;
 
   color: white;
-
-  display: grid;
-
-  grid-template-columns: 100px 1fr;
-
-  gap: 5vw;
 }
 
-
 .music-number {
-  padding-top: 9px;
+  padding-top: 5px;
 
-  font-size: 12px;
+  font-size: 10px;
 
   color: #777;
 }
 
+.music-label {
+  margin-bottom: 25px;
 
-.music-eyebrow {
-  font-size: 11px;
-
-  letter-spacing: 4px;
-
-  margin-bottom: 35px;
-
-  color: #aaa;
+  color: #888;
 }
-
 
 .music-content h2 {
-  font-size: clamp(80px, 13vw, 190px);
+  margin-bottom: 50px;
 
-  line-height: 0.8;
+  font-size: clamp(48px, 7vw, 100px);
 
-  letter-spacing: -7px;
+  line-height: 0.85;
 
-  margin-bottom: 70px;
+  letter-spacing: -4px;
 }
-
 
 .music-content h2 span {
   color: #efafc1;
 }
 
-
 .music-lead {
-  max-width: 900px;
+  max-width: 780px;
 
-  font-size: clamp(25px, 3.5vw, 48px);
+  font-size: clamp(21px, 2.4vw, 34px);
 
-  line-height: 1.18;
+  line-height: 1.25;
 
-  letter-spacing: -1.5px;
+  letter-spacing: -1px;
 }
-
 
 .music-text {
-  margin-top: 35px;
+  max-width: 600px;
 
-  max-width: 650px;
+  margin-top: 25px;
 
-  font-size: 17px;
+  font-size: 14px;
 
-  line-height: 1.7;
+  line-height: 1.75;
 
-  color: #c2c2c2;
+  color: #bbb;
 }
 
-
 .music-members {
-  margin-top: 50px;
+  max-width: 720px;
 
-  max-width: 800px;
+  margin-top: 38px;
 
   border-top: 1px solid #444;
 }
 
-
 .music-members span {
   display: block;
 
-  padding: 13px 0;
+  padding: 11px 0;
 
   border-bottom: 1px solid #333;
 
+  font-size: 11px;
+
   color: #aaa;
-
-  font-size: 14px;
 }
-
 
 .spotify-button {
   width: fit-content;
 
-  margin-top: 45px;
+  margin-top: 35px;
+
+  padding: 12px 20px;
 
   display: inline-flex;
 
   align-items: center;
 
-  gap: 12px;
+  gap: 10px;
 
-  padding: 15px 24px;
+  border-radius: 100px;
 
   background: #efafc1;
 
   color: #111;
 
-  text-decoration: none;
-
-  border-radius: 100px;
+  font-size: 11px;
 
   font-weight: 700;
 
+  text-decoration: none;
+
   transition: 0.2s;
 }
-
 
 .spotify-button:hover {
   transform: translateY(-2px);
@@ -1036,87 +1013,108 @@ a {
   background: white;
 }
 
-
 .spotify-icon {
-  width: 26px;
-
-  height: 26px;
+  width: 22px;
+  height: 22px;
 }
 
 
 /* ============================= */
-/* POEZJA */
+/* POEZJA / DOM */
 /* ============================= */
 
 .poetry {
-  min-height: 750px;
+  min-height: 650px;
 
-  padding: 110px 7%;
+  padding: 100px 7%;
+
+  display: grid;
+
+  grid-template-columns: 70px 1fr;
+
+  gap: 4vw;
 
   background: #d86d8d;
 
   color: white;
-
-  display: grid;
-
-  grid-template-columns: 100px 1fr;
-
-  gap: 5vw;
 }
-
 
 .poetry-number {
-  font-size: 12px;
+  padding-top: 4px;
 
-  opacity: 0.6;
+  font-size: 10px;
 
-  padding-top: 8px;
+  opacity: 0.65;
 }
 
-
-.eyebrow-dark {
-  font-size: 11px;
-
-  letter-spacing: 4px;
-
-  margin-bottom: 40px;
+.poetry-label {
+  margin-bottom: 30px;
 }
-
 
 .poetry h2 {
+  margin-bottom: 55px;
+
   font-family: "Playfair Display", serif;
 
-  font-size: clamp(100px, 18vw, 260px);
+  font-size: clamp(65px, 10vw, 145px);
 
   font-style: italic;
 
-  line-height: 0.75;
+  line-height: 0.8;
 
   font-weight: 600;
-
-  margin-bottom: 80px;
 }
-
 
 .poetry-big {
-  font-size: clamp(28px, 4vw, 55px);
+  max-width: 760px;
 
-  max-width: 900px;
+  font-size: clamp(22px, 2.7vw, 38px);
 
-  line-height: 1.1;
+  line-height: 1.2;
 
-  letter-spacing: -2px;
+  letter-spacing: -1px;
 }
 
-
 .poetry-text {
-  margin-top: 40px;
+  max-width: 550px;
 
-  max-width: 600px;
+  margin-top: 28px;
 
-  font-size: 17px;
+  font-size: 14px;
 
   line-height: 1.7;
+}
+
+.book-button {
+  display: inline-block;
+
+  width: fit-content;
+
+  margin-top: 35px;
+
+  padding: 12px 21px;
+
+  border-radius: 100px;
+
+  background: white;
+
+  color: #111;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition: 0.2s;
+}
+
+.book-button:hover {
+  transform: translateY(-2px);
+
+  background: #111;
+
+  color: white;
 }
 
 
@@ -1125,93 +1123,80 @@ a {
 /* ============================= */
 
 .contact {
-  min-height: 85vh;
+  min-height: 70vh;
 
-  padding: 120px 7% 80px;
-
-  background: #111;
-
-  color: white;
+  padding: 100px 7% 65px;
 
   display: flex;
 
   flex-direction: column;
 
   justify-content: space-between;
+
+  background: #111;
+
+  color: white;
 }
 
-
-.contact-small {
-  font-size: 11px;
-
-  letter-spacing: 5px;
+.contact-label {
+  color: #777;
 }
-
 
 .contact h2 {
-  font-size: clamp(75px, 13vw, 205px);
+  margin: 70px 0;
 
-  line-height: 0.78;
+  font-size: clamp(50px, 7.5vw, 115px);
 
-  letter-spacing: -8px;
+  line-height: 0.84;
 
-  margin: 100px 0;
+  letter-spacing: -4px;
 }
-
 
 .contact h2 em {
-  color: #efafc1;
-
   font-family: "Playfair Display", serif;
+
+  color: #efafc1;
 }
 
-
 .contact-grid {
+  padding-top: 30px;
+
   display: grid;
 
   grid-template-columns: repeat(3, 1fr);
 
-  gap: 35px;
+  gap: 30px;
 
   border-top: 1px solid #333;
-
-  padding-top: 35px;
 }
-
 
 .contact-item {
   display: flex;
 
   flex-direction: column;
 
-  gap: 12px;
+  gap: 10px;
 }
-
 
 .contact-item > span {
-  color: #777;
-
-  font-size: 10px;
+  font-size: 8px;
 
   letter-spacing: 3px;
-}
 
+  color: #777;
+}
 
 .contact-item > a {
   width: fit-content;
 
-  color: white;
-
-  font-size: clamp(17px, 2vw, 26px);
+  font-size: clamp(14px, 1.4vw, 20px);
 
   text-decoration: none;
 }
 
-
 .contact-item > a:hover {
   color: #efafc1;
 }
-
 
 .instagram-link {
   display: inline-flex;
@@ -1220,14 +1205,12 @@ a {
 
   align-items: center;
 
-  gap: 12px;
+  gap: 10px;
 }
 
-
 .instagram-icon {
-  width: 36px;
-
-  height: 36px;
+  width: 29px;
+  height: 29px;
 }
 
 
@@ -1236,30 +1219,28 @@ a {
 /* ============================= */
 
 footer {
-  padding: 30px 7%;
-
-  background: #111;
-
-  color: #777;
-
-  border-top: 1px solid #333;
+  padding: 24px 7%;
 
   display: flex;
 
   justify-content: space-between;
 
-  gap: 30px;
+  gap: 25px;
 
-  font-size: 12px;
+  border-top: 1px solid #333;
+
+  background: #111;
+
+  color: #777;
+
+  font-size: 10px;
 }
-
 
 .footer-links {
   display: flex;
 
-  gap: 20px;
+  gap: 18px;
 }
-
 
 footer a {
   color: #aaa;
@@ -1275,22 +1256,27 @@ footer a {
 @media (max-width: 1000px) {
 
   .about-grid,
-  .theatre-intro,
-  .film-header,
-  .video-heading {
+  .theatre-header,
+  .video-heading,
+  .film-header {
     grid-template-columns: 1fr;
   }
 
-
   .about-photo {
-    height: 700px;
+    height: 680px;
   }
 
+  .theatre-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .theatre-description {
+    margin-top: 15px;
+  }
 
   .contact-grid {
     grid-template-columns: 1fr;
   }
-
 
 }
 
@@ -1301,23 +1287,23 @@ footer a {
 
 @media (max-width: 700px) {
 
-
   .header {
-    padding: 18px 5%;
+    padding: 16px 5%;
   }
 
+  .logo {
+    font-size: 19px;
+  }
 
   .nav {
-    gap: 14px;
+    gap: 13px;
   }
 
-
   .nav a {
-    font-size: 9px;
+    font-size: 8px;
 
     letter-spacing: 0;
   }
-
 
   .nav a:nth-child(2),
   .nav a:nth-child(4),
@@ -1331,188 +1317,195 @@ footer a {
   .hero {
     min-height: 100svh;
 
-    padding: 130px 6% 60px;
+    padding: 115px 6% 55px;
 
     background-position: 60% center;
   }
 
-
   .hero h1 {
-    font-size: clamp(60px, 19vw, 100px);
+    font-size: clamp(46px, 14vw, 70px);
 
-    letter-spacing: -4px;
+    letter-spacing: -3px;
   }
-
 
   .hero-description {
-    font-size: 16px;
+    max-width: 300px;
 
-    max-width: 330px;
-  }
-
-
-  .scroll {
-    display: none;
+    font-size: 13px;
   }
 
 
   /* OGÓLNE */
 
   .section {
-    padding: 85px 6%;
+    padding: 75px 6%;
   }
-
 
   .section-heading {
-    margin-bottom: 55px;
+    margin-bottom: 45px;
   }
 
 
-  /* ABOUT */
+  /* O MNIE */
 
   .about-grid {
     grid-template-columns: 1fr;
 
-    gap: 55px;
+    gap: 45px;
   }
-
 
   .about-photo {
-    height: 560px;
+    height: 520px;
   }
-
 
   .about-content h2 {
-    font-size: 59px;
+    font-size: 43px;
 
-    letter-spacing: -3px;
+    letter-spacing: -2px;
   }
-
 
   .about-content > p:not(.small-heading) {
-    font-size: 16px;
+    font-size: 14px;
   }
 
 
-  /* STATEMENT */
+  /* HASŁO */
 
   .statement {
-    padding: 85px 6%;
+    padding: 75px 6%;
   }
 
-
   .statement h2 {
-    letter-spacing: -3px;
+    font-size: 39px;
+
+    letter-spacing: -2px;
   }
 
 
   /* TEATR */
 
-  .theatre-intro {
-    grid-template-columns: 1fr;
+  .theatre-section {
+    padding: 75px 6%;
   }
 
-
-  .theatre-intro h2 {
-    letter-spacing: -4px;
-  }
-
-
-  .project {
-    grid-template-columns: 45px 1fr;
-
-    min-height: 150px;
-  }
-
-
-  .project h3 {
-    font-size: 30px;
-  }
-
-
-  .project:hover {
-    padding-left: 0;
-  }
-
-
-  /* WIDEO */
-
-  .video-section {
-    padding: 85px 6%;
-  }
-
-
-  .video-heading {
+  .theatre-header {
     grid-template-columns: 1fr;
 
     gap: 35px;
   }
 
+  .theatre-header h2 {
+    font-size: 48px;
+
+    letter-spacing: -3px;
+  }
+
+  .theatre-description {
+    font-size: 14px;
+  }
+
+  .theatre-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .theatre-card {
+    min-height: 175px;
+  }
+
+  .theatre-card h3 {
+    font-size: 25px;
+  }
+
+
+  /* VIDEO */
+
+  .video-section {
+    padding: 75px 6%;
+  }
+
+  .video-heading {
+    grid-template-columns: 1fr;
+
+    gap: 28px;
+  }
 
   .video-heading h2 {
-    font-size: 65px;
+    font-size: 48px;
 
-    letter-spacing: -4px;
+    letter-spacing: -3px;
   }
 
 
   /* PORTRET */
 
   .portrait-section {
-    height: 80vh;
+    height: 72vh;
 
-    min-height: 600px;
+    min-height: 560px;
   }
-
 
   .portrait-section img {
     object-position: center top;
   }
 
-
   .portrait-text h2 {
-    font-size: 70px;
+    font-size: 50px;
 
-    letter-spacing: -4px;
+    letter-spacing: -3px;
   }
 
 
   /* GALERIA */
 
   .gallery-section {
-    padding: 85px 6%;
+    padding: 75px 6%;
   }
 
+  .gallery-heading {
+    grid-template-columns: 35px 1fr;
 
-  .gallery-header {
-    flex-direction: column;
-
-    align-items: flex-start;
-
-    gap: 25px;
+    margin-bottom: 45px;
   }
 
+  .gallery-heading h2 {
+    font-size: 49px;
 
-  .gallery-header h2 {
-    font-size: 70px;
-
-    letter-spacing: -4px;
+    letter-spacing: -3px;
   }
-
 
   .gallery-grid {
-    grid-template-columns: 1fr;
+    display: grid;
 
-    gap: 12px;
+    grid-template-columns: 1fr 1fr;
+
+    grid-auto-rows: auto;
+
+    gap: 8px;
   }
 
-
-  .gallery-photo,
-  .gallery-large,
-  .gallery-wide {
+  .photo-one,
+  .photo-two,
+  .photo-three,
+  .photo-four {
     grid-column: auto;
+    grid-row: auto;
+  }
+
+  .photo-one {
+    grid-column: 1 / -1;
 
     height: 520px;
+  }
+
+  .photo-two,
+  .photo-three {
+    height: 320px;
+  }
+
+  .photo-four {
+    grid-column: 1 / -1;
+
+    height: 480px;
   }
 
 
@@ -1520,105 +1513,107 @@ footer a {
 
   .film-header {
     grid-template-columns: 1fr;
-  }
 
+    gap: 30px;
+  }
 
   .film-header h2 {
-    letter-spacing: -4px;
-  }
+    font-size: 48px;
 
+    letter-spacing: -3px;
+  }
 
   .film-row {
     grid-template-columns: 55px 1fr;
 
-    gap: 10px;
+    gap: 8px;
   }
 
+  .film-row h3 {
+    font-size: 22px;
+  }
 
-  .film-row .role {
+  .film-row p {
     grid-column: 2;
 
     text-align: left;
-
-    margin-top: 5px;
-  }
-
-
-  .film-row:hover {
-    padding-left: 0;
   }
 
 
   /* MUZYKA */
 
   .music-section {
+    padding: 75px 6%;
+
     grid-template-columns: 1fr;
-
-    padding: 85px 6%;
   }
-
 
   .music-number {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
-
   .music-content h2 {
-    font-size: 70px;
+    margin-bottom: 40px;
 
-    letter-spacing: -4px;
+    font-size: 52px;
 
-    margin-bottom: 50px;
+    letter-spacing: -3px;
+  }
+
+  .music-lead {
+    font-size: 22px;
   }
 
 
   /* POEZJA */
 
   .poetry {
-    grid-template-columns: 1fr;
+    padding: 75px 6%;
 
-    padding: 85px 6%;
+    grid-template-columns: 1fr;
   }
 
-
   .poetry h2 {
-    font-size: 110px;
+    margin-bottom: 45px;
 
-    margin-bottom: 60px;
+    font-size: 75px;
+  }
+
+  .poetry-big {
+    font-size: 23px;
   }
 
 
   /* KONTAKT */
 
   .contact {
-    min-height: 80vh;
+    min-height: 70vh;
 
-    padding: 90px 6% 60px;
+    padding: 75px 6% 50px;
   }
-
 
   .contact h2 {
-    font-size: 73px;
+    margin: 60px 0;
 
-    letter-spacing: -5px;
+    font-size: 52px;
 
-    margin: 80px 0;
+    letter-spacing: -3px;
   }
-
 
   .contact-grid {
     grid-template-columns: 1fr;
 
-    gap: 30px;
+    gap: 25px;
   }
 
 
+  /* FOOTER */
+
   footer {
-    padding: 25px 6%;
+    padding: 22px 6%;
 
     flex-direction: column;
   }
-
 
   .footer-links {
     flex-wrap: wrap;
